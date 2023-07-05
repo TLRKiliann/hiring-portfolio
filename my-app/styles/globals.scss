@@ -1,0 +1,21 @@
+@import 'fonts.scss';
+@import 'colors.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #181818;
+  overflow: hidden;
+}
+
+footer {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  height: 80px;
+
+  border: 1px solid orange;
+}
