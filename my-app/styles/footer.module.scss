@@ -1,3 +1,6 @@
+@import 'fonts.scss';
+@import 'colors.scss';
+
 .divfooterlogo {
   width: 100%;
   display: flex;
@@ -9,9 +12,9 @@
   display: flex;
   align-items: center;
 
-  background: blue;
+  background: slateblue;
   border-radius: 50px;
-  padding: 10px 20px;
+  padding: 5px 12px;
 }
 
 .a {

@@ -5,32 +5,27 @@
   height: 80px;
   display: flex;
   font-family: $acme_font;
-  background: slategrey;
+  background: #202020;
   box-shadow: 0px 0px 7px slategrey;
-}
-
-.ul {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-}
-
-.li {
-  list-style: none;
-}
-
-.link {
-  margin: 0px 40px;
-  text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: whitesmoke;
-}
-
-.image {
-  margin: 0px 20px;
-  display: flex;
-  align-items: center;
-  color: orange;
+  .image {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+  }
+  .ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  .li {
+    list-style: none;
+  }
+  .link {
+    margin: 0px 40px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: whitesmoke;
+  }
 }
