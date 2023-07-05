@@ -15,7 +15,8 @@ footer {
   bottom: 0px;
   left: 0px;
   display: flex;
-  height: 80px;
+  height: 100px;
+  background: slategrey;
 
-  border: 1px solid orange;
+  box-shadow: 0px 0px 7px slategrey;
 }
