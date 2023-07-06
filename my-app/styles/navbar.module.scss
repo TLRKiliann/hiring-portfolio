@@ -4,8 +4,7 @@
 .navbar {
   height: 80px;
   display: flex;
-  font-family: $acme_font;
-  background: #202020;
+  background: linear-gradient(30deg, #282b45, #202020);
   box-shadow: 0px 0px 7px slategrey;
   .image {
     margin: 0px;
@@ -24,8 +23,12 @@
   .link {
     margin: 0px 40px;
     text-decoration: none;
-    font-size: 1.6rem;
-    font-weight: 400;
+    font-family: $akayakanadaka_font;
+    font-size: 1.4rem;
+    font-weight: 600;
     color: whitesmoke;
+    &:hover {
+      color: sandybrown;
+    }
   }
 }

@@ -2,35 +2,30 @@
 @import 'colors.scss';
 
 .mainSection {
-  width: 90%;
-  margin: auto;
+  margin: 100px auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 40px 0px;
 
   border: 1px solid purple;
-
   .header {
     color: whitesmoke;
     h3 {
       margin: auto;
-      font-size: 1.6rem;
+      font-size: 2rem;
     }
     h2 {
       margin: auto;
-      font-size: 2.0rem;
+      font-size: 3.8rem;
     }
   }
-
   .myPhoto {
     filter: opacity(100%);
   }
-
   .photo {
     border: 3mm ridge slategrey;
     border-radius: 50%;
     object-fit: cover;
   }
-
 }

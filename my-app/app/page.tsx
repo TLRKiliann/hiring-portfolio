@@ -6,7 +6,7 @@ import ContactSection from '@/components/contactSection'
 import style from '@/styles/page.module.scss'
 
 export const metadata: Metadata = {
-  title: 'Next.js',
+  title: 'Portfolio',
 }
  
 export default function Page() {
