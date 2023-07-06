@@ -1,0 +1,17 @@
+.contact {
+  color: whitesmoke;
+  .header {
+    margin: auto;
+    font-size: 2rem;
+  }
+  .divcontact {
+    margin-left: 60px;
+    .divlogocontact {
+      display: flex;
+      align-items: center;
+      .h3 {
+        margin: 10px;
+      }
+    }
+  }
+}
