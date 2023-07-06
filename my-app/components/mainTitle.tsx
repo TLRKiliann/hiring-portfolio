@@ -12,11 +12,11 @@ export default function MainTitle() {
             Hey there !
           </h3>
           <h2>
-            My name is Cédric Kuchen
+            I'm Cédric Kuchen
           </h2>
-          <h2 style={{color: "whitesmoke"}}>
+          <h3 style={{color: "whitesmoke"}}>
             Software Engineer. Self-taught & passionated by web development.
-          </h2>
+          </h3>
         </div>
 
         <div className={style.myPhoto}>

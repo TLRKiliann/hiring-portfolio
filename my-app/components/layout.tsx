@@ -4,7 +4,6 @@ import React, { PropsWithChildren } from "react";
 import Navbar from './navbar'
 import Footer from './footer'
 
-
 export default function Layout({ children }: PropsWithChildren) {
   //const { data, error } = useSWR('/api/navigation', fetcher)
  
