@@ -22,11 +22,11 @@ export default function SkillsSection() {
               Sass
             </li>
             <li>
-              <SiTailwindcss size={32} className={style.logo} style={{color: "aqua"}} />
+              <SiTailwindcss size={32} className={style.logo} style={{color: "deepskyblue"}} />
               Tailwind
             </li>
             <li>
-              <FaReact size={32} className={style.logo} style={{color: "aqua"}} />
+              <FaReact size={32} className={style.logo} style={{color: "cyan"}} />
               React-Icons
             </li>
             <li>
@@ -40,11 +40,12 @@ export default function SkillsSection() {
           <h2 className={style.h2}>Frontend</h2>
           <span className={style.spanskills}>
             <li>
-              <FaReact size={32} className={style.logo} style={{color: "aqua"}} />
+              <FaReact size={32} className={style.logo} style={{color: "cyan"}} />
               React
             </li>
             <li>
-              <SiTypescript size={32} className={style.logo} style={{color: "steelblue"}} />
+              <SiTypescript size={32} className={style.logo} 
+                style={{color: "steelblue", background: "#ccc", borderRadius: "5px"}} />
               TypeScript
             </li>
             <li>
@@ -52,16 +53,18 @@ export default function SkillsSection() {
               Next.js
               </li>
             <li>
-              <SiSvelte size={32} className={style.logo} style={{color: "orangered"}} />
+              <SiSvelte size={32} className={style.logo} 
+                style={{color: "orangered"}} />
               Sveltekit
             </li>
             <li>
-              <FaVuejs size={32} className={style.logo} style={{color: "green"}} />
+              <FaVuejs size={32} className={style.logo}
+                style={{color: "#00ff80"}} />
               Vue.js
             </li>
             <li>
               <FaWordpress size={32} className={style.logo}
-                style={{color: "deepskyblue", background: "#ccc", borderRadius: "100%"}} />
+                style={{color: "dodgerblue", background: "#ccc", borderRadius: "100%"}} />
               Wordpress
             </li>
           </span>
@@ -94,13 +97,13 @@ export default function SkillsSection() {
               Git & GitHub
             </li>
             <li>
-              <FaPython size={32} className={style.logo} style={{color: "green"}} />
+              <FaPython size={32} className={style.logo} style={{color: "#00ff80"}} />
               Python 3
             </li>
             <li>
               <FcLinux size={32} className={style.logo} />Linux</li>
             <li>
-              <FaWindows size={32} className={style.logo} style={{color: "cyan"}} />
+              <FaWindows size={32} className={style.logo} style={{color: "aqua"}} />
               Hyper-V
             </li>
           </span>

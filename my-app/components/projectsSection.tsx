@@ -1,7 +1,13 @@
+import Image from 'next/image'
 import { FaSass, FaWordpress, FaPython } from 'react-icons/fa'
 import { SiTailwindcss, SiTypescript, SiMysql, SiVitest,
   SiMongoose } from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
+import Ecommerce from '@/public/images/e-commerce.png'
+import Agenda from '@/public/images/agenda-map.png'
+import Boulangerie from '@/public/images/boulangerie.png'
+import Axis from '@/public/images/institut-axis.png'
+import TimeTrack from '@/public/images/time-track.png'
 import style from '@/styles/projects.module.scss'
 
 export default function ProjectsSection() {
@@ -18,9 +24,12 @@ export default function ProjectsSection() {
             E-commerce Modern Clothing
           </h2>
           <div className={style.divimg}>
-            <>
-              Image
-            </>
+            <Image 
+              src={Ecommerce}
+              width={300}
+              height={200}
+              alt="e-commerce img"
+            />
           </div>
           
           <span className={style.spanlogo}>
@@ -62,9 +71,13 @@ export default function ProjectsSection() {
             Agenda Map
           </h2>
           <div className={style.divimg}>
-            <>
-              Image
-            </>
+            <Image 
+              src={Agenda}
+              width={300}
+              height={300}
+              alt="agenda img"
+              className={style.img}
+            />
           </div>
           
           <span className={style.spanlogo}>
@@ -102,9 +115,13 @@ export default function ProjectsSection() {
             Site de Boulangerie
           </h2>
           <div className={style.divimg}>
-            <>
-              Image
-            </>
+            <Image 
+              src={Boulangerie}
+              width={300}
+              height={300}
+              alt="boulangerie img"
+              className={style.img}
+            />
           </div>
           
           <span className={style.spanlogo}>
@@ -132,7 +149,6 @@ export default function ProjectsSection() {
         </div>
       </div>
 
-
       <div className={style.seconddivproject}>
 
         <div className={style.subdivproject}>
@@ -140,9 +156,13 @@ export default function ProjectsSection() {
             Institut-axis
           </h2>
           <div className={style.divimg}>
-            <>
-              Image
-            </>
+            <Image 
+              src={Axis}
+              width={200}
+              height={100}
+              alt="axis img"
+              className={style.img}
+            />
           </div>
           
           <span className={style.spanlogo}>
@@ -155,11 +175,11 @@ export default function ProjectsSection() {
           <p className={style.paragraph}>
             Text TextTextText TextTextText TextText TextText
           </p>
-          <span className={style.spanlink}>
+          <span className={style.spanlinkaxis}>
             <a href="https://www.institut-axis.org/"
               rel="noopener" target="_blank"
               className={style.a}>
-              Lien vers le site
+              Accéder au site
             </a>
           </span>
         </div>
@@ -169,9 +189,13 @@ export default function ProjectsSection() {
             Webapp Python3 for Nurses
           </h2>
           <div className={style.divimg}>
-            <>
-              Image
-            </>
+            <Image 
+              src={TimeTrack}
+              width={300}
+              height={300}
+              alt="time-track img"
+              className={style.img}
+            />
           </div>
           
           <span className={style.spanlogo}>
@@ -195,7 +219,8 @@ export default function ProjectsSection() {
               className={style.a}>
               GitHub
             </a>
-            <a href="https://www.youtube.com/watch?v=aV-X16sxRoI&list=PLVqrrQlbJDKOem4RhHMXvVJJbq6BOY0Fl&index=3"
+            <a 
+              href="https://www.youtube.com/watch?v=aV-X16sxRoI&list=PLVqrrQlbJDKOem4RhHMXvVJJbq6BOY0Fl&index=3"
               rel="noopener" target="_blank"
               className={style.a}>
               Youtube
