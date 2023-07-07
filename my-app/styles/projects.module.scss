@@ -57,6 +57,20 @@
         @include text-color(#ccc, $slategrey);
       }
       .divimg {
+        display: flex;
+        justify-content: center;
+        width: 100%;  
+        height: 100%;
+        border-radius: 7px;
+        border: 1px solid $slategrey;
+        filter: opacity(85%);
+        .img {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 7px;
+        }
       }
       .spanlogo {
         margin-top: 10px;
@@ -86,17 +100,19 @@
         padding: 10px 10px;
       }
       .spanlink {
+        width: 80%;
+        margin: auto;
         display: flex;
+        justify-content: space-between;
         color: dodgerblue;
-      }
-      .a {
-        margin-left: 10px;
-        text-decoration: none;
-        font-size: 1.0rem;
-        color: aqua;
-        &:hover {
-          cursor: pointer;
-          color: deepskyblue;
+        .a {
+          text-decoration: none;
+          font-size: 1.0rem;
+          color: aqua;
+          &:hover {
+            cursor: pointer;
+            color: deepskyblue;
+          }
         }
       }
     }
@@ -120,6 +136,24 @@
         margin-bottom: 20px;
         @include text-color(#ccc, $slategrey);
       }
+
+      .divimg {
+        display: flex;
+        justify-content: center;
+        width: 100%;  
+        height: 100%;
+        border-radius: 7px;
+        border: 1px solid $slategrey;
+        filter: opacity(85%);
+        .img {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 7px;
+        }
+      }
+
       .spanlogo {
         margin-top: 10px;
         display: flex;
@@ -148,17 +182,32 @@
         padding: 10px 10px;
       }
       .spanlink {
+        width: 80%;
+        margin: auto;
         display: flex;
+        justify-content: space-between;
         color: dodgerblue;
+        .a {
+          text-decoration: none;
+          font-size: 1.0rem;
+          color: aqua;
+          &:hover {
+            cursor: pointer;
+            color: deepskyblue;
+          }
+        }
       }
-      .a {
-        margin-left: 10px;
-        text-decoration: none;
-        font-size: 1.0rem;
-        color: aqua;
-        &:hover {
-          cursor: pointer;
-          color: deepskyblue;
+      .spanlinkaxis {
+        margin-left: 20px;
+        color: dodgerblue;
+        .a {
+          text-decoration: none;
+          font-size: 1.0rem;
+          color: aqua;
+          &:hover {
+            cursor: pointer;
+            color: deepskyblue;
+          }
         }
       }
     }
