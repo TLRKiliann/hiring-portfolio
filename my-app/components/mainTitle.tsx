@@ -7,16 +7,19 @@ export default function MainTitle() {
     <>
       <div className={style.mainSection}>
         
-        <div className={style.header}>      
-          <h3>
+        <div className={style.header}>
+          <h3 className={style.h3}>
             Hey there !
           </h3>
-          <h2>
+          <h1 className={style.h1}>
             I'm Cédric Kuchen
+          </h1>
+          <h2 className={style.h2}>
+            Software Engineer.&nbsp;
           </h2>
-          <h3 style={{color: "whitesmoke"}}>
-            Software Engineer. Self-taught & passionated by web development.
-          </h3>
+          <p className={style.paragraph}>
+            Self-taught & passionated by web development.
+          </p>
         </div>
 
         <div className={style.myPhoto}>

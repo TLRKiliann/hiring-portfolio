@@ -15,51 +15,94 @@ export default function SkillsSection() {
 
       <div className={style.divskills}>
         <div className={style.subdivskills}>
-          <h2>Design</h2>
+          <h2 className={style.h2}>Design</h2>
           <span className={style.spanskills}>
-
-            <li><FaSass size={32} className={style.logo} />Sass</li>
-            <li><SiTailwindcss size={32} className={style.logo} />Tailwind</li>
-            <li><FaReact size={32} className={style.logo} />React-Icons</li>
-            <li><SiGimp size={32} className={style.logo} />Gimp</li>
-
+            <li>
+              <FaSass size={32} className={style.logo} style={{color: "hotpink"}} />
+              Sass
+            </li>
+            <li>
+              <SiTailwindcss size={32} className={style.logo} style={{color: "aqua"}} />
+              Tailwind
+            </li>
+            <li>
+              <FaReact size={32} className={style.logo} style={{color: "aqua"}} />
+              React-Icons
+            </li>
+            <li>
+              <SiGimp size={32} className={style.logo} style={{color: "brown"}} />
+              Gimp
+            </li>
           </span>
         </div>
 
         <div className={style.subdivskills}>
-          <h2>Frontend</h2>
+          <h2 className={style.h2}>Frontend</h2>
           <span className={style.spanskills}>
-
-            <li><FaReact size={32} className={style.logo} />React</li>
-            <li><SiTypescript size={32} className={style.logo} />TypeScript</li>
-            <li><TbBrandNextjs size={32} className={style.logo} />Next.js</li>
-            <li><SiSvelte size={32} className={style.logo} />Sveltekit</li>
-            <li><FaVuejs size={32} className={style.logo} />Vue.js</li>
-            <li><FaWordpress size={32} className={style.logo} />Wordpress</li>
-
+            <li>
+              <FaReact size={32} className={style.logo} style={{color: "aqua"}} />
+              React
+            </li>
+            <li>
+              <SiTypescript size={32} className={style.logo} style={{color: "steelblue"}} />
+              TypeScript
+            </li>
+            <li>
+              <TbBrandNextjs size={32} className={style.logo} style={{color: "#ccc"}} />
+              Next.js
+              </li>
+            <li>
+              <SiSvelte size={32} className={style.logo} style={{color: "orangered"}} />
+              Sveltekit
+            </li>
+            <li>
+              <FaVuejs size={32} className={style.logo} style={{color: "green"}} />
+              Vue.js
+            </li>
+            <li>
+              <FaWordpress size={32} className={style.logo}
+                style={{color: "deepskyblue", background: "#ccc", borderRadius: "100%"}} />
+              Wordpress
+            </li>
           </span>
         </div>
 
         <div className={style.subdivskills}>
-          <h2>Backend</h2>
+          <h2 className={style.h2}>Backend</h2>
           <span className={style.spanskills}>
-
-            <li><SiMysql size={32} className={style.logo} />MySQL</li>
-            <li><SiMongoose size={32} className={style.logo} />Mongoose</li>
-            <li><FaUbuntu size={32} className={style.logo} />Lamp</li>
-
+            <li>
+              <SiMysql size={32} className={style.logo} style={{color: "cyan"}} />
+              MySQL
+            </li>
+            <li>
+              <SiMongoose size={32} className={style.logo} style={{color: "brown"}} />
+              Mongoose
+            </li>
+            <li>
+              <FaUbuntu size={32} className={style.logo}
+                style={{color: "orangered", background: "#ccc", borderRadius: "100%"}} />
+              Lamp
+            </li>
           </span>
         </div>
 
         <div className={style.subdivskills}>
-          <h2>Other</h2>
+          <h2 className={style.h2}>Other</h2>
           <span className={style.spanskills}>
-
-            <li><FaGithub size={32} className={style.logo} />Git & GitHub</li>
-            <li><FaPython size={32} className={style.logo} />Python 3</li>
-            <li><FcLinux size={32} className={style.logo} />Linux</li>
-            <li><FaWindows size={32} className={style.logo} />Hyper-V</li>
-
+            <li>
+              <FaGithub size={32} className={style.logo} style={{color: "#ccc"}} />
+              Git & GitHub
+            </li>
+            <li>
+              <FaPython size={32} className={style.logo} style={{color: "green"}} />
+              Python 3
+            </li>
+            <li>
+              <FcLinux size={32} className={style.logo} />Linux</li>
+            <li>
+              <FaWindows size={32} className={style.logo} style={{color: "cyan"}} />
+              Hyper-V
+            </li>
           </span>
         </div>
 

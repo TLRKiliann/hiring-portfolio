@@ -1,8 +1,8 @@
-import { FaSass } from 'react-icons/fa'
+import { FaSass, FaWordpress, FaPython } from 'react-icons/fa'
 import { SiTailwindcss, SiTypescript, SiMysql, SiVitest,
   SiMongoose } from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
-import style from '@/styles/project.module.scss'
+import style from '@/styles/projects.module.scss'
 
 export default function ProjectsSection() {
   return (
@@ -14,7 +14,7 @@ export default function ProjectsSection() {
       <div className={style.divproject}>
 
         <div className={style.subdivproject}>
-          <h2>
+          <h2 className={style.h2}>
             E-commerce Modern Clothing
           </h2>
           <div className={style.divimg}>
@@ -24,7 +24,6 @@ export default function ProjectsSection() {
           </div>
           
           <span className={style.spanlogo}>
-
             <div className={style.divlogo}>
               <TbBrandNextjs size={24} className={style.logo} />
               <p className={style.titlelogo}>Next.js</p>
@@ -39,7 +38,6 @@ export default function ProjectsSection() {
               <SiMongoose size={24} className={style.logo} />
               <p className={style.titlelogo}>Mongoose</p>
             </div>
-
           </span>
 
           <p className={style.paragraph}>
@@ -60,7 +58,7 @@ export default function ProjectsSection() {
         </div>
 
         <div className={style.subdivproject}>
-          <h2>
+          <h2 className={style.h2}>
             Agenda Map
           </h2>
           <div className={style.divimg}>
@@ -70,7 +68,6 @@ export default function ProjectsSection() {
           </div>
           
           <span className={style.spanlogo}>
-
             <div className={style.divlogo}>
               <SiVitest size={24} className={style.logo} />
               <p className={style.titlelogo}>Vite.js</p>
@@ -85,7 +82,6 @@ export default function ProjectsSection() {
               <SiMysql size={24} className={style.logo} />
               <p className={style.titlelogo}>MySQL</p>
             </div>
-
           </span>
 
           <p className={style.paragraph}>
@@ -102,7 +98,7 @@ export default function ProjectsSection() {
         </div>
 
         <div className={style.subdivproject}>
-          <h2>
+          <h2 className={style.h2}>
             Site de Boulangerie
           </h2>
           <div className={style.divimg}>
@@ -112,7 +108,6 @@ export default function ProjectsSection() {
           </div>
           
           <span className={style.spanlogo}>
-
             <div className={style.divlogo}>
               <SiVitest size={24} className={style.logo} />
               <p className={style.titlelogo}>Vite.js</p>
@@ -121,7 +116,6 @@ export default function ProjectsSection() {
               <FaSass size={24} className={style.logo} />
               <p className={style.titlelogo}>Sass</p>
             </div>
-
           </span>
 
           <p className={style.paragraph}>
@@ -142,7 +136,7 @@ export default function ProjectsSection() {
       <div className={style.seconddivproject}>
 
         <div className={style.subdivproject}>
-          <h2>
+          <h2 className={style.h2}>
             Institut-axis
           </h2>
           <div className={style.divimg}>
@@ -152,12 +146,10 @@ export default function ProjectsSection() {
           </div>
           
           <span className={style.spanlogo}>
-
             <div className={style.divlogo}>
-              <TbBrandNextjs size={24} className={style.logo} />
+              <FaWordpress size={24} className={style.logo} />
               <p className={style.titlelogo}>Wordpress</p>
             </div>
-
           </span>
 
           <p className={style.paragraph}>
@@ -173,7 +165,7 @@ export default function ProjectsSection() {
         </div>
 
         <div className={style.subdivproject}>
-          <h2>
+          <h2 className={style.h2}>
             Webapp Python3 for Nurses
           </h2>
           <div className={style.divimg}>
@@ -183,22 +175,15 @@ export default function ProjectsSection() {
           </div>
           
           <span className={style.spanlogo}>
-
             <div className={style.divlogo}>
-              <TbBrandNextjs size={24} className={style.logo} />
-              <p className={style.titlelogo}>Python3</p>
-            </div>
-
-            <div className={style.divlogo}>
-              <SiTailwindcss size={24} className={style.logo} />
-              <p className={style.titlelogo}>Tkinter</p>
+              <FaPython size={24} className={style.logo} />
+              <p className={style.titlelogo}>Python3-Tkinter</p>
             </div>
 
             <div className={style.divlogo}>
               <SiMysql size={24} className={style.logo} />
               <p className={style.titlelogo}>MySQL</p>
             </div>
-
           </span>
 
           <p className={style.paragraph}>
