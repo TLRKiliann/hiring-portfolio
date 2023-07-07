@@ -15,12 +15,15 @@ export default function Page() {
       <section className={style.sectionMainTitle}>
         <MainTitle />
       </section>
+      <hr className={style.hr}/>
       <section className={style.sectionSkillsSection}>
         <SkillsSection />
       </section>
+      <hr className={style.hr}/>
       <section className={style.sectionProjectsSection}>
         <ProjectsSection />
       </section>
+      <hr className={style.hr}/>
       <section className={style.sectionContactSection}>
         <ContactSection />
       </section>

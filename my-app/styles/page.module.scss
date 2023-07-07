@@ -1,19 +1,25 @@
 .sectionMainTitle {
-	padding: 40px 20px;
-	border: 1px solid whitesmoke;
+  padding: 40px 20px;
+}
+
+.hr {
+  width: 80%;
+  margin: 20px auto;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
 .sectionSkillsSection {
-	padding: 20px 20px;
-	border: 1px solid orangered;
+  padding: 20px 20px;
 }
 
 .sectionProjectsSection {
-	padding: 20px 20px;
-	border: 1px solid lightgreen;
+  padding: 20px 20px;
 }
 
 .sectionContactSection {
-	padding: 20px 20px;
-	border: 1px solid yellow;
+  padding: 20px 20px;
+  border: 1px solid yellow;
 }
