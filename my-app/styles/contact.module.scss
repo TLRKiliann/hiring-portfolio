@@ -1,16 +1,32 @@
+@import 'fonts.scss';
+@import 'colors.scss';
+
+@mixin text-color($color_1, $color_2) {
+  background: -webkit-linear-gradient($color_1, $color_2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .contact {
-  color: whitesmoke;
-  .header {
+    width: 520px;
     margin: auto;
+  color: $slategrey;
+  .header {
+    margin: auto 0px;
     font-size: 2rem;
+    @include text-color(#ccc, $slategrey);
   }
   .divcontact {
-    margin-left: 60px;
+    margin: 30px 40px;
+    background: rgba(100, 100, 100, 0.1);
+    border-radius: 10px;
+    padding: 10px 20px;
     .divlogocontact {
       display: flex;
       align-items: center;
       .h3 {
         margin: 10px;
+        font-size: 1.6rem;
       }
     }
   }
