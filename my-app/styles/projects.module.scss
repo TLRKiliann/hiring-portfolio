@@ -33,7 +33,7 @@
   border: none;
   outline: none;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px $slategrey;
+  box-shadow: 0px 0px 3px grey;
   padding: 20px;
   .h2 {
     margin: auto;
@@ -58,17 +58,19 @@
   .spanlogo {
     margin-top: 20px;
     display: flex;
-    background: $bg_color;
+    background: $black_color;
     border: 1px solid $slategrey;
-    border-radius: 7px;
+    box-shadow: 0px 0px 7px $slategrey;
+    border-radius: 10px;
+    padding: 10px 0px;
     .divlogo {
       display: flex;
       align-items: center;
       margin: 10px auto;
       background: $bg_color2;
       border-radius: 20px;
-      box-shadow: 0px 0px 4px $slategrey;
-      padding: 5px;
+      box-shadow: 0px 0px 4px inset $slategrey;
+      padding: 10px;
       .titlelogo {
         margin: auto 5px;
         border: none;
@@ -81,8 +83,10 @@
     height: 240px;
     background: $black_color;
     border: 1px solid $slategrey;
+    box-shadow: 0px 0px 7px $slategrey;
     border-radius: 7px;
     overflow-y: scroll;
+    scroll-behavior: smooth;
     padding: 0px 20px;
     .paragraph {
       text-align: justify;
