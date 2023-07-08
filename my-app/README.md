@@ -9,6 +9,11 @@ J'ai découvert également une librarie React (react-intersection-observer) pour
 
 ## EN
 
+My portfolio for my postings. I chose Next.js to review how to manipulate the
+manipulating the Sass design system with Next.js
+
+I also discovered a React library (react-intersection-observer) to launch the animation as the user scrolls down the page.
+
 ## Install
 
 └─ $ ▶ pnpm add --save-dev sass
