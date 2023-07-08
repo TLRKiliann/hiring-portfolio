@@ -1,6 +1,17 @@
 @import 'fonts.scss';
 @import 'colors.scss';
 
+@keyframes footer-anim {
+  0% {
+    opacity: 0;
+    transform: scale(0.0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.0);
+  }
+}
+
 .divfooterlogo {
   width: 100%;
   display: flex;
@@ -9,14 +20,23 @@
   .a {
     display: flex;
     align-items: center;
-
-    background: linear-gradient(30deg, $slategrey, #333);
+    background: linear-gradient(30deg, $slategrey, #282b45);
     border-radius: 50px;
-    padding: 5px 12px;
-
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #ccc; 
+    color: #ccc;
+    padding: 5px 12px;
+
+    animation-name: footer-anim;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    transform: scale(1.0);
+    &:hover {
+      background: #282b45;
+      box-shadow: 0px 0px 10px #ccc;
+    }
   }
 }
