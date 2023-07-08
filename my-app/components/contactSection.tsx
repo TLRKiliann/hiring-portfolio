@@ -10,11 +10,11 @@ export default function ContactSection() {
       </h1>
       <div className={style.divcontact}>
         <div className={style.divlogocontact}>
-          <MdEmail size={24} style={{color: "deepskyblue"}} />
+          <MdEmail size={24} style={{color: "lightskyblue"}} />
           <h3 className={style.h3}>cedric.kuchen@protonmail.com</h3>
         </div>
         <div className={style.divlogocontact}>
-          <FaPhone size={24} style={{color: "deepskyblue"}} />
+          <FaPhone size={24} style={{color: "lightskyblue"}} />
           <h3 className={style.h3}>079 210 32 30</h3>
         </div>
       </div>

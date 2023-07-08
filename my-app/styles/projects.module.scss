@@ -3,7 +3,7 @@
 
 @keyframes anim-skills {
   0% {
-    transform: translateY(100px);
+    transform: translateY(200px);
     opacity: 0;
   }
   100% {
@@ -27,13 +27,105 @@
   transform: translateY(0px);
 }
 
+@mixin container-project() {
+  width: 28%;
+  background: linear-gradient(30deg, $slategrey, $bg_color2);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px grey;
+  padding: 20px;
+  .h2 {
+    margin: auto;
+    margin-bottom: 20px;
+    @include text-color($lightgrey, $slategrey);
+  }
+  .divimg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    border: 1px solid $slategrey;
+    filter: opacity(85%);
+    .img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 7px;
+    }
+  }
+  .spanlogo {
+    margin-top: 20px;
+    display: flex;
+    background: $black_color;
+    border: 1px solid $slategrey;
+    box-shadow: 0px 0px 7px $slategrey;
+    border-radius: 10px;
+    padding: 10px 0px;
+    .divlogo {
+      display: flex;
+      align-items: center;
+      margin: 10px auto;
+      background: $bg_color2;
+      border-radius: 20px;
+      box-shadow: 0px 0px 4px inset $slategrey;
+      padding: 10px;
+      .titlelogo {
+        margin: auto 5px;
+        border: none;
+        padding: 0px;
+      }
+    }
+  }
+  .section {
+    margin: 20px 0px;
+    height: 240px;
+    background: $black_color;
+    border: 1px solid $slategrey;
+    box-shadow: 0px 0px 7px $slategrey;
+    border-radius: 7px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 0px 20px;
+    .paragraph {
+      text-align: justify;
+      text-justify: inter-word;
+      font-family: $noto_serif;
+    }
+    .ul {
+      padding-bottom: 20px 0px;
+      .li {
+        list-style: circle outside;
+        font-family: $noto_serif;
+      }
+    }
+  }
+  .spanlink {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: dodgerblue;
+    .a {
+      text-decoration: none;
+      font-size: 1.0rem;
+      color: aqua;
+      &:hover {
+        cursor: pointer;
+        color: deepskyblue;
+      }
+    }
+  }
+}
+
 .project {
-  color: #ccc;
+  color: $lightgrey;
   font-family: $akayakanadaka_font;
   .header {
     margin: auto 0px;
     font-size: 2rem;
-    @include text-color(#ccc, $slategrey);
+    @include text-color($lightgrey, $slategrey);
   }
   .divproject {
     margin: 20px 0px;
@@ -42,78 +134,7 @@
     justify-content: space-between;
     @include params-anim(0s);
     .subdivproject {
-      width: 28%;
-      background: linear-gradient(30deg, $bg_color2, #202020);
-      border: none;
-      outline: none;
-      border-radius: 20px;
-      box-shadow: 0px 0px 10px $slategrey;
-      padding: 20px;
-      .h2 {
-        margin: auto;
-        margin-bottom: 20px;
-        font-family: $acme_font;
-        font-size: 1.4rem;
-        @include text-color(#ccc, $slategrey);
-      }
-      .divimg {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        border-radius: 7px;
-        border: 1px solid $slategrey;
-        filter: opacity(85%);
-        .img {
-          width: 100%;
-          height: auto;
-          object-fit: cover;
-          border-radius: 7px;
-        }
-      }
-      .spanlogo {
-        margin-top: 10px;
-        display: flex;
-        background: #202020;
-        border-radius: 7px;
-        .divlogo {
-          display: flex;
-          align-items: center;
-          margin: 10px auto;
-          background: $bg_color2;
-          border-radius: 20px;
-          padding: 5px;
-          .titlelogo {
-            margin: auto 5px;
-            border: none;
-            padding: 0px;
-          }
-        }
-      }
-      .paragraph {
-        text-align: justify;
-        text-justify: inter-word;
-        background: #202020;
-        border: 1px solid $slategrey;
-        border-radius: 7px;
-        padding: 10px 10px;
-      }
-      .spanlink {
-        width: 80%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        color: dodgerblue;
-        .a {
-          text-decoration: none;
-          font-size: 1.0rem;
-          color: aqua;
-          &:hover {
-            cursor: pointer;
-            color: deepskyblue;
-          }
-        }
-      }
+      @include container-project();
     }
   }
   .seconddivproject {
@@ -123,90 +144,18 @@
     justify-content: space-evenly;
     @include params-anim(0.2s);
     .subdivproject {
-      width: 28%;
-      background: linear-gradient(30deg, $bg_color2, #202020);
-      border: none;
-      outline: none;
-      border-radius: 20px;
-      box-shadow: 0px 0px 10px $slategrey;
-      padding: 20px;
-      .h2 {
-        margin: auto;
-        margin-bottom: 20px;
-        @include text-color(#ccc, $slategrey);
-      }
-
-      .divimg {
-        display: flex;
-        justify-content: center;
-        width: 100%;  
-        height: 100%;
-        border-radius: 7px;
-        border: 1px solid $slategrey;
-        filter: opacity(85%);
-        .img {
-          display: flex;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 7px;
-        }
-      }
-
-      .spanlogo {
-        margin-top: 10px;
-        display: flex;
-        background: #202020;
-        border-radius: 7px;
-        .divlogo {
-          display: flex;
-          align-items: center;
-          margin: 10px auto;
-          background: $bg_color2;
-          border-radius: 20px;
-          padding: 5px;
-          .titlelogo {
-            margin: auto 5px;
-            border: none;
-            padding: 0px;
-          }
-        }
-      }
-      .paragraph {
-        text-align: justify;
-        text-justify: inter-word;
-        background: #202020;
-        border: 1px solid $slategrey;
-        border-radius: 7px;
-        padding: 10px 10px;
-      }
-      .spanlink {
-        width: 80%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        color: dodgerblue;
-        .a {
-          text-decoration: none;
-          font-size: 1.0rem;
-          color: aqua;
-          &:hover {
-            cursor: pointer;
-            color: deepskyblue;
-          }
-        }
-      }
-      .spanlinkaxis {
-        margin-left: 20px;
-        color: dodgerblue;
-        .a {
-          text-decoration: none;
-          font-size: 1.0rem;
-          color: aqua;
-          &:hover {
-            cursor: pointer;
-            color: deepskyblue;
-          }
+      @include container-project();
+    }
+    .spanlinkaxis {
+      margin-left: 20px;
+      color: dodgerblue;
+      .a {
+        text-decoration: none;
+        font-size: 1.0rem;
+        color: aqua;
+        &:hover {
+          cursor: pointer;
+          color: deepskyblue;
         }
       }
     }

@@ -7,7 +7,44 @@ export default function MainTitle() {
   return (
     <>
       <div className={style.mainSection}>
-        
+        <div className={style.grid}>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+          <div className={style.griditem}></div>
+        </div>
         <div className={style.container}>
           <h3 className={style.h3}>
             Hello ! Welcome to my portfolio. My name's -

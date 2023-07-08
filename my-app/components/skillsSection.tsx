@@ -30,7 +30,8 @@ export default function SkillsSection() {
               React-Icons
             </li>
             <li>
-              <SiGimp size={32} className={style.logo} style={{color: "brown"}} />
+              <SiGimp size={32} className={style.logo} 
+                style={{color: "#9f6934", background: "#ccc", borderRadius: "100%"}} />
               Gimp
             </li>
           </span>
@@ -49,7 +50,7 @@ export default function SkillsSection() {
               TypeScript
             </li>
             <li>
-              <TbBrandNextjs size={32} className={style.logo} style={{color: "#ccc"}} />
+              <TbBrandNextjs size={32} className={style.logo} style={{color: "#fff"}} />
               Next.js
               </li>
             <li>
@@ -93,11 +94,11 @@ export default function SkillsSection() {
           <h2 className={style.h2}>Other</h2>
           <span className={style.spanskills}>
             <li>
-              <FaGithub size={32} className={style.logo} style={{color: "#ccc"}} />
+              <FaGithub size={32} className={style.logo} style={{color: "#fff"}} />
               Git & GitHub
             </li>
             <li>
-              <FaPython size={32} className={style.logo} style={{color: "#00ff80"}} />
+              <FaPython size={32} className={style.logo} style={{color: "#228b22"}} />
               Python 3
             </li>
             <li>

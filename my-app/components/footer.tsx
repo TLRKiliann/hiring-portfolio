@@ -56,7 +56,3 @@ export default function Footer() {
     </>
   )
 }
-
-/*
-              style={{marginRight: "5px", padding: "4px"}}
-*/

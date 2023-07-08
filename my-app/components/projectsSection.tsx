@@ -26,8 +26,6 @@ export default function ProjectsSection() {
           <div className={style.divimg}>
             <Image 
               src={Ecommerce}
-              width={380}
-              height={200}
               alt="e-commerce img"
               layout="responsive"
               className={style.img}
@@ -51,15 +49,20 @@ export default function ProjectsSection() {
             </div>
           </span>
 
-          <p className={style.paragraph}>
-            Dans ce projet, j'ai voulu rendre l'UX la plus attractive
-            et la plus professionnelle possible. Ainsi, les étapes du
-            cheminement de l'achat du produit selectionné est claire
-            pour l'utilisateur.
-            <br />
-            J'ai utiliser Tailwind pour le design avec le theme (darkmode).
-            Pour la sécurité, j'ai utiliser Typescript et NextAuth.
-          </p>
+          <section className={style.section}>
+            <article>
+              <p className={style.paragraph}>
+                Dans ce projet, j'ai voulu rendre l'UX la plus attractive
+                et la plus professionnelle possible. Ainsi, les étapes du
+                cheminement de l'achat du produit selectionné est claire
+                pour l'utilisateur.
+                <br />
+                J'ai utiliser Tailwind pour le design avec le theme (darkmode).
+                Pour la sécurité, j'ai utiliser Typescript et NextAuth.
+              </p>
+            </article>
+          </section>
+
           <span className={style.spanlink}>
             <a href="https://github.com/TLRKiliann/nextjs-tailwind-mongodb" 
               rel="noopener" target="_blank"
@@ -105,17 +108,21 @@ export default function ProjectsSection() {
             </div>
           </span>
 
-          <p className={style.paragraph}>
-            Cette webapp permet d'agender un rendez-vous avec
-            les coordonnées d'une personne, ainsi que la localisation
-            du lieu de rendez-vous avec le site de "wego.here.com".
-            Les données sont modifiables après les avoir entrées et 
-            l'utilisateur peut également enregistrer le rendez-vous
-            sur une autre page une fois terminé.
-            <br />
-            Mon point d'amélioration est la refactorisation du code et 
-            le style (design peu soigné).
-          </p>
+          <section className={style.section}>
+            <article>
+              <p className={style.paragraph}>
+                Cette webapp permet d'agender un rendez-vous avec
+                les coordonnées d'une personne, ainsi que la localisation
+                du lieu de rendez-vous avec le site de "wego.here.com".
+                Les données sont modifiables après les avoir entrées et 
+                l'utilisateur peut également enregistrer le rendez-vous
+                sur une autre page une fois terminé.
+                <br />
+                Mon point d'amélioration est la refactorisation du code et 
+                le style (design peu soigné).
+              </p>
+            </article>
+          </section>
           <span className={style.spanlink}>
             <a href="https://github.com/TLRKiliann/agenda-map" 
               rel="noopener" target="_blank"
@@ -150,21 +157,26 @@ export default function ProjectsSection() {
               <p className={style.titlelogo}>Sass</p>
             </div>
           </span>
+          
+          <section className={style.section}>
+            <article>
+              <p className={style.paragraph}>
+                J'ai fait ce site de boulangerie, pour m'entraîner à la manipulation 
+                le css, le html et les images.
+                <br/>
+                J'ai insérer un formulaire pour commander des produits.
+                <br />
+                Bien que le design présente bien et que la cohérence du site soit
+                respectée, je trouve qu'il est d'apparence un peu old-school.
+              </p>
+            </article>
+          </section>
 
-          <p className={style.paragraph}>
-            J'ai fait ce site de boulangerie, pour m'entraîner à la manipulation 
-            le css, le html et les images.
-            <br/>
-            J'ai insérer un formulaire pour commander des produits.
-            <br />
-            Bien que le design présente bien et que la cohérence du site soit
-            respectée, je trouve qu'il est d'apparence un peu old-school.
-          </p>
           <span className={style.spanlink}>
             <a href="https://github.com/TLRKiliann/vite-et-bien"
               rel="noopener" target="_blank"
               className={style.a}>GitHub</a>
-            <a href="you: https://www.youtube.com/watch?v=8g789tQ2gyY"
+            <a href="https://www.youtube.com/watch?v=8g789tQ2gyY"
               rel="noopener" target="_blank"
               className={style.a}>Youtube</a>
           </span>
@@ -194,20 +206,24 @@ export default function ProjectsSection() {
             </div>
           </span>
 
-          <p className={style.paragraph}>
-            Christophe Bonamy, directeur de l'Institut-Axis m'a 
-            demandé de lui faire un site avec Wordpress.
-            <br />
-            La construction s'est faite avec son associé, Bruno Ceparro. 
-            Nous avons oeuvré ensemble pour ce projet à l'aide des librairies
-            Ocean-WP et Elementor (version gratuite). 
-            <br />
-            Bruno s'est occupé de la conception du site sur mes conseils
-            et moi j'ai développé. 
-            <br />
-            Le directeur et son Bras-droit sont ravis du résultat, malgré
-            ma remise en question quant à la cohérence du site.
-          </p>
+          <section className={style.section}>
+            <article>
+              <p className={style.paragraph}>
+                Christophe Bonamy, directeur de l'Institut-Axis m'a 
+                demandé de lui faire un site avec Wordpress.
+                <br />
+                La construction s'est faite avec son associé, Bruno Ceparro. 
+                Nous avons oeuvré ensemble pour ce projet à l'aide des librairies
+                Ocean-WP et Elementor (version gratuite). 
+                <br />
+                Bruno s'est occupé de la conception du site sur mes conseils
+                et moi j'ai développé. 
+                <br />
+                Le directeur et son Bras-droit sont ravis du résultat, malgré
+                ma remise en question quant à la cohérence du site.
+              </p>
+            </article>
+          </section>
           <span className={style.spanlinkaxis}>
             <a href="https://www.institut-axis.org/"
               rel="noopener" target="_blank"
@@ -243,28 +259,46 @@ export default function ProjectsSection() {
             </div>
           </span>
 
-          <p className={style.paragraph}>
-            Ma première webapp avec Python3. Je suis tellement fier de ce projet de par
-            le nombre de fonctionnalité que j'ai intégré, le nombre de problème rencontré
-            et que j'ai résolu, la créativité dont j'ai fait preuve et qui font que cette
-            application est une webapp de soins améliorée.
-            <br />
-            Pour la construire, j'ai utlisé :
-          </p>
-            <li>tkinter pour la GUI.</li>
-            <li>matplotlib pour le rendu des paramètres vitaux.</li>
-            <li>multi-processing pour ouvrir des nouvelles fenêtre et 
-            rendre l'UX plus agréable.</li>
-            <li>multi-threading pour les alarmes programmables.</li>
-            <li>MySQL pour le tableau récapitulatif des données patients.</li>
+          <section className={style.section}>
+            <article>
+              <p className={style.paragraph}>
+                Ma première webapp avec Python3. Je suis tellement fier de ce projet de par
+                le nombre de fonctionnalité que j'ai intégré, le nombre de problème rencontré
+                et que j'ai résolu, la créativité dont j'ai fait preuve et qui font que cette
+                application est une webapp de soins améliorée.
+              </p>
+              <p className={style.paragraph}>
+                Pour la construire, j'ai utlisé :
+              </p>
+              <ul className={style.ul}>
+                <li className={style.li}>
+                  tkinter pour la GUI.
+                </li>
+                <li className={style.li}>
+                  matplotlib pour le rendu des paramètres vitaux.
+                </li>
+                <li className={style.li}>
+                  multi-processing pour ouvrir 
+                  des nouvelles fenêtre et rendre l'UX plus agréable.
+                </li>
+                <li className={style.li}>
+                  multi-threading pour les alarmes 
+                  programmables.
+                </li>
+                <li className={style.li}>
+                  MySQL pour le tableau récapitulatif des données patients.
+                </li>
+              </ul>
+            </article>
+          </section>
+
           <span className={style.spanlink}>
             <a href="https://github.com/TLRKiliann/timetrack" 
               rel="noopener" target="_blank"
               className={style.a}>
               GitHub
             </a>
-            <a 
-              href="https://www.youtube.com/watch?v=aV-X16sxRoI&list=PLVqrrQlbJDKOem4RhHMXvVJJbq6BOY0Fl&index=3"
+            <a href="https://www.youtube.com/watch?v=aV-X16sxRoI&list=PLVqrrQlbJDKOem4RhHMXvVJJbq6BOY0Fl&index=3"
               rel="noopener" target="_blank"
               className={style.a}>
               Youtube
