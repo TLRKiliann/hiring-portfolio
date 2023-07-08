@@ -1,6 +1,17 @@
 @import 'fonts.scss';
 @import 'colors.scss';
 
+@keyframes contact-anim {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 @mixin text-color($color_1, $color_2) {
   background: -webkit-linear-gradient($color_1, $color_2);
   -webkit-background-clip: text;
@@ -8,9 +19,8 @@
 }
 
 .contact {
-    width: 520px;
-    margin: auto;
-  color: $slategrey;
+  width: 520px;
+  margin: auto;
   .header {
     margin: auto 0px;
     font-size: 2rem;
@@ -18,15 +28,23 @@
   }
   .divcontact {
     margin: 30px 40px;
-    background: rgba(100, 100, 100, 0.1);
+    background: linear-gradient($bg_color2, $slategrey);
     border-radius: 10px;
     padding: 10px 20px;
+    
+    animation-name: contact-anim;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    transform: translateY(0px);
+    transition: ease;
     .divlogocontact {
       display: flex;
       align-items: center;
       .h3 {
         margin: 10px;
         font-size: 1.6rem;
+        @include text-color(#ccc, $slategrey);
       }
     }
   }
