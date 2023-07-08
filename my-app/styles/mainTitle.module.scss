@@ -1,6 +1,15 @@
 @import 'fonts.scss';
 @import 'colors.scss';
 
+@keyframes grid-anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+
 @keyframes titles {
   0% {
     transform: translateX(-100px);
@@ -59,6 +68,30 @@
   align-items: center;
   justify-content: space-between;
   padding: 40px 0px;
+  .grid {
+    position: absolute;
+    top: 240px;
+    right: 870px;
+    left: 0px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr); 
+    grid-auto-columns: calc((180px - 3em) / 4);
+    grid-auto-flow: column;
+    grid-gap: 1em;
+    height: 180px;
+    opacity: 0.1;
+    z-index: -1;
+    animation-name: grid-anim;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+  }
+  .griditem:nth-child(3n) {
+    background-color: aqua;
+  }
+  .griditem:nth-child(3n + 2) {
+    background-color: deepskyblue;
+  }
   .container {
     font-family: $akayakanadaka_font;
     color: #ccc;
@@ -113,9 +146,9 @@
         transition: ease 0.2s;
         &:hover {
           background: linear-gradient(30deg, $slategrey, $bg_color2);
-          box-shadow: 0px 0px 10px gold;
-          color: sandybrown;
-          transform: rotate(-7deg);
+          box-shadow: 0px 0px 10px aqua;
+          color: aqua;
+          transform: rotate(-15deg);
         }
       }
     }
