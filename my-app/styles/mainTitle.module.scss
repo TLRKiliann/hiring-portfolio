@@ -3,7 +3,7 @@
 
 @keyframes titles {
   0% {
-    transform: translateX(-2000px);
+    transform: translateX(-100px);
     opacity: 0;
   }
   100% {
@@ -12,21 +12,28 @@
   }
 }
 
-@keyframes photo {
+@keyframes logo {
   0% {
-    transform: translateX(2000px);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-  75% {
-    transform: rotate3d(-3,3,-3, 360deg);
+    transform: translateY(100px);
     opacity: 0;
   }
   100% {
-    transform: rotate3d(3,-3,3, 360deg);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes photo {
+  0% {
+    transform: scale(0.0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.0);
     opacity: 1;
   }
 }
@@ -52,33 +59,30 @@
   align-items: center;
   justify-content: space-around;
   padding: 40px 0px;
-  .header {
+  .container {
     font-family: $akayakanadaka_font;
     color: #ccc;
+    @include params-anim(0s);
     .h3 {
       margin: auto;
       text-align: justify;
       font-size: 2rem;
-      @include text-color($slategrey, dimgrey);
-      @include params-anim(0s);
+      @include text-color($slategrey, $dimgrey);
     }
     .h1 {
       margin: auto;
       font-size: 3.8rem;
       @include text-color(#ccc, $slategrey);
-      @include params-anim(0.2s);
     } 
     .h2 {
       margin: auto;
       font-size: 2.8rem;
-      @include text-color($slategrey, dimgrey);
-      @include params-anim(0.4s);
+      @include text-color($slategrey, $dimgrey);
     }
     .paragraph {
       margin: auto;
       font-size: 2.6rem;
       @include text-color($slategrey, #333);
-      @include params-anim(0.6s);
     }
     .divlogo {
       margin-top: 20px;
@@ -86,32 +90,50 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      .span {
+
+      animation-name: logo;
+      animation-delay: 0s;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+      transform: translateY(0px);
+      transition: ease;
+      .a {
         display: flex;
         align-items: center;
-        background: linear-gradient(30deg, $slategrey, #333);
+        background: linear-gradient(30deg, $slategrey, $bg_color2);
         border-radius: 50px;
         padding: 5px 12px;
-        .a {
-          text-decoration: none;
-          font-size: 1.2rem;
-          font-weight: 600;
-          color: #ccc;
+        text-decoration: none;
+        
+        font-family: $acme_font;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #ccc;
+        transform: rotadeY(0deg);
+        transition: ease 0.2s;
+        &:hover {
+          background: linear-gradient(30deg, $slategrey, $bg_color2);
+          box-shadow: 0px 0px 10px gold;
+          color: sandybrown;
+          transform: rotate(-7deg);
         }
       }
     }
   }
   .myPhoto {
     filter: opacity(100%);
+    border: 3mm ridge rgba(112,128,144, 0.8);
+    border-radius: 100%;
+    box-shadow: 0px 0px 7px $slategrey;
+    
     animation-name: photo;
     animation-delay: 0s;
-    animation-duration: 1.2s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
-    transform: translateX(0px) rotate3d(0, 0, 0, 0deg);
+    transform: scale(1.0);
     transition: ease;
   }
   .photo {
-    border: 3mm ridge rgba(112,128,144, 0.8);
     border-radius: 50%;
     object-fit: cover;
   }

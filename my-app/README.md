@@ -1,5 +1,19 @@
 # Portfolio
 
+## FR
+
+Mon portfolio pour mes postulations. J'ai choisi Next.js afin de revoir comment
+on manipule le design system Sass avec Next.js
+
+J'ai découvert également une librarie React (react-intersection-observer) pour lancer l'animation pendant que l'utilisateur scroll en descendant la page.
+
+## EN
+
+My portfolio for my postings. I chose Next.js to review how to manipulate the
+manipulating the Sass design system with Next.js
+
+I also discovered a React library (react-intersection-observer) to launch the animation as the user scrolls down the page.
+
 ## Install
 
 └─ $ ▶ pnpm add --save-dev sass
@@ -7,6 +21,8 @@
 └─ $ ▶ pnpm add @fontsource/acme
 
 └─ $ ▶ pnpm add @fontsource/akaya-kanadaka
+
+└─ $ ▶ pnpm i react-intersection-observer --save
 
 ## Getting Started
 

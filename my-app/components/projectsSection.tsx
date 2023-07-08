@@ -26,9 +26,11 @@ export default function ProjectsSection() {
           <div className={style.divimg}>
             <Image 
               src={Ecommerce}
-              width={300}
+              width={380}
               height={200}
               alt="e-commerce img"
+              layout="responsive"
+              className={style.img}
             />
           </div>
           
@@ -50,7 +52,13 @@ export default function ProjectsSection() {
           </span>
 
           <p className={style.paragraph}>
-            Text TextTextText TextTextText TextText TextText
+            Dans ce projet, j'ai voulu rendre l'UX la plus attractive
+            et la plus professionnelle possible. Ainsi, les étapes du
+            cheminement de l'achat du produit selectionné est claire
+            pour l'utilisateur.
+            <br />
+            J'ai utiliser Tailwind pour le design avec le theme (darkmode).
+            Pour la sécurité, j'ai utiliser Typescript et NextAuth.
           </p>
           <span className={style.spanlink}>
             <a href="https://github.com/TLRKiliann/nextjs-tailwind-mongodb" 
@@ -73,8 +81,8 @@ export default function ProjectsSection() {
           <div className={style.divimg}>
             <Image 
               src={Agenda}
-              width={300}
-              height={300}
+              width={380}
+              height={200}
               alt="agenda img"
               className={style.img}
             />
@@ -98,7 +106,15 @@ export default function ProjectsSection() {
           </span>
 
           <p className={style.paragraph}>
-            Text TextTextText TextTextText TextText TextText
+            Cette webapp permet d'agender un rendez-vous avec
+            les coordonnées d'une personne, ainsi que la localisation
+            du lieu de rendez-vous avec le site de "wego.here.com".
+            Les données sont modifiables après les avoir entrées et 
+            l'utilisateur peut également enregistrer le rendez-vous
+            sur une autre page une fois terminé.
+            <br />
+            Mon point d'amélioration est la refactorisation du code et 
+            le style (design peu soigné).
           </p>
           <span className={style.spanlink}>
             <a href="https://github.com/TLRKiliann/agenda-map" 
@@ -112,13 +128,13 @@ export default function ProjectsSection() {
 
         <div className={style.subdivproject}>
           <h2 className={style.h2}>
-            Site de Boulangerie
+            Site de boulangerie
           </h2>
           <div className={style.divimg}>
             <Image 
               src={Boulangerie}
-              width={300}
-              height={300}
+              width={380}
+              height={200}
               alt="boulangerie img"
               className={style.img}
             />
@@ -136,7 +152,13 @@ export default function ProjectsSection() {
           </span>
 
           <p className={style.paragraph}>
-            Text TextTextText TextTextText TextText TextText
+            J'ai fait ce site de boulangerie, pour m'entraîner à la manipulation 
+            le css, le html et les images.
+            <br/>
+            J'ai insérer un formulaire pour commander des produits.
+            <br />
+            Bien que le design présente bien et que la cohérence du site soit
+            respectée, je trouve qu'il est d'apparence un peu old-school.
           </p>
           <span className={style.spanlink}>
             <a href="https://github.com/TLRKiliann/vite-et-bien"
@@ -158,8 +180,8 @@ export default function ProjectsSection() {
           <div className={style.divimg}>
             <Image 
               src={Axis}
-              width={200}
-              height={100}
+              width={380}
+              height={200}
               alt="axis img"
               className={style.img}
             />
@@ -173,7 +195,18 @@ export default function ProjectsSection() {
           </span>
 
           <p className={style.paragraph}>
-            Text TextTextText TextTextText TextText TextText
+            Christophe Bonamy, directeur de l'Institut-Axis m'a 
+            demandé de lui faire un site avec Wordpress.
+            <br />
+            La construction s'est faite avec son associé, Bruno Ceparro. 
+            Nous avons oeuvré ensemble pour ce projet à l'aide des librairies
+            Ocean-WP et Elementor (version gratuite). 
+            <br />
+            Bruno s'est occupé de la conception du site sur mes conseils
+            et moi j'ai développé. 
+            <br />
+            Le directeur et son Bras-droit sont ravis du résultat, malgré
+            ma remise en question quant à la cohérence du site.
           </p>
           <span className={style.spanlinkaxis}>
             <a href="https://www.institut-axis.org/"
@@ -191,13 +224,13 @@ export default function ProjectsSection() {
           <div className={style.divimg}>
             <Image 
               src={TimeTrack}
-              width={300}
-              height={300}
+              width={380}
+              height={200}
               alt="time-track img"
               className={style.img}
             />
           </div>
-          
+
           <span className={style.spanlogo}>
             <div className={style.divlogo}>
               <FaPython size={24} className={style.logo} />
@@ -211,8 +244,19 @@ export default function ProjectsSection() {
           </span>
 
           <p className={style.paragraph}>
-            Text TextTextText TextTextText TextText TextText
+            Ma première webapp avec Python3. Je suis tellement fier de ce projet de par
+            le nombre de fonctionnalité que j'ai intégré, le nombre de problème rencontré
+            et que j'ai résolu, la créativité dont j'ai fait preuve et qui font que cette
+            application est une webapp de soins améliorée.
+            <br />
+            Pour la construire, j'ai utlisé :
           </p>
+            <li>tkinter pour la GUI.</li>
+            <li>matplotlib pour le rendu des paramètres vitaux.</li>
+            <li>multi-processing pour ouvrir des nouvelles fenêtre et 
+            rendre l'UX plus agréable.</li>
+            <li>multi-threading pour les alarmes programmables.</li>
+            <li>MySQL pour le tableau récapitulatif des données patients.</li>
           <span className={style.spanlink}>
             <a href="https://github.com/TLRKiliann/timetrack" 
               rel="noopener" target="_blank"

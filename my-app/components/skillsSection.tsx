@@ -13,8 +13,8 @@ export default function SkillsSection() {
         Skills
       </h1>
 
-      <div className={style.divskills}>
-        <div className={style.subdivskills}>
+      <div id="skills-wrapper" className={style.divskills}>
+        <div id="skillscroll" className={style.subdivskills}>
           <h2 className={style.h2}>Design</h2>
           <span className={style.spanskills}>
             <li>

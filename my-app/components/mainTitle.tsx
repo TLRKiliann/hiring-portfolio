@@ -8,12 +8,12 @@ export default function MainTitle() {
     <>
       <div className={style.mainSection}>
         
-        <div className={style.header}>
+        <div className={style.container}>
           <h3 className={style.h3}>
-            Hey there !
+            Hello ! Welcome to my portfolio. My name's -
           </h3>
           <h1 className={style.h1}>
-            I'm Cédric Kuchen
+            Cédric Kuchen
           </h1>
           <h2 className={style.h2}>
             Software Engineer.&nbsp;
@@ -22,71 +22,51 @@ export default function MainTitle() {
             Self-taught & passionated by web development.
           </p>
 
-
-
           <div className={style.divlogo}>
-            <span className={style.span}>
+            <a href="https://github.com/TLRKiliann"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={style.a}>
               <FaGithub
                 size={32}
-                style={{marginRight: "5px", padding: "4px", color: "#ccc"}}
+                style={{marginRight: "5px", padding: "4px"}}
               />
+              GitHub
+            </a>
 
-              <a href="https://github.com/TLRKiliann"
+            <a href="https://www.youtube.com/@estebancatanea"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={style.a}
-              >
-                GitHub
-              </a>
-            </span>
-
-            <span className={style.span}>
+                className={style.a}>
               <FaYoutube
                 size={32}
-                style={{marginRight: "5px", padding: "4px", color: "#ccc"}}
+                style={{marginRight: "5px", padding: "4px"}}
               />
-              <a href="https://www.youtube.com/@estebancatanea"
+              Youtube
+            </a>
+
+            <a href="https://codepen.io/koalatr33"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={style.a}
-              >
-                Youtube
-              </a>
-            </span>
-
-            <span className={style.span}>
+                className={style.a}>
               <FaCodepen
                 size={32}
-                style={{marginRight: "5px", padding: "4px", color: "#ccc"}}
+                style={{marginRight: "5px", padding: "4px"}}
               />
+                codepen.io
+            </a>
 
-              <a href="https://codepen.io/koalatr33"
+            <a href="https://www.linkedin.com/in/cedric-kuchen-dev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={style.a}
-              >
-                codepen.io
-              </a>
-            </span>
-
-            <span className={style.span}>
+                className={style.a}>
               <FaLinkedin
                 size={32}
-                style={{marginRight: "5px", padding: "4px", color: "#ccc"}}
+                style={{marginRight: "5px", padding: "4px"}}
               />
-              <a href="https://www.linkedin.com/in/cedric-kuchen-dev"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={style.a}
-              >
                 LinkedIn
-              </a>
-            </span>
-
+            </a>
           </div>
-
-
-
 
         </div>
 
