@@ -54,10 +54,10 @@
 }
 
 .mainSection {
-  margin: 100px auto;
+  margin: 100px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 40px 0px;
   .container {
     font-family: $akayakanadaka_font;
@@ -121,6 +121,7 @@
     }
   }
   .myPhoto {
+    margin-right: 100px;
     filter: opacity(100%);
     border: 3mm ridge rgba(112,128,144, 0.8);
     border-radius: 100%;
