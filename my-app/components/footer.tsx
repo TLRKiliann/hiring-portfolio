@@ -7,70 +7,49 @@ export default function Footer() {
       <footer>
         <div className={style.divfooterlogo}>
 
-          <span className={style.span}>
+          <a href="https://github.com/TLRKiliann"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={style.a}>
             <FaGithub
               size={32}
-              style={{marginRight: "5px", padding: "4px", color: "whitesmoke"}}
+              style={{marginRight: "5px", padding: "4px"}}
             />
+              GitHub
+          </a>
 
-            <a href="https://github.com/TLRKiliann"
+          <a href="https://www.youtube.com/@estebancatanea"
               target="_blank"
               rel="noopener noreferrer"
-              className={style.a}
-            >
-              GitHub
-            </a>
-          </span>
-
-
-          <span className={style.span}>
+              className={style.a}>
             <FaYoutube
               size={32}
-              style={{marginRight: "5px", padding: "4px", color: "whitesmoke"}}
+              style={{marginRight: "5px", padding: "4px"}}
             />
+              Youtube
+          </a>
 
-
-            <a href="https://www.youtube.com/@estebancatanea"
+          <a href="https://codepen.io/koalatr33"
               target="_blank"
               rel="noopener noreferrer"
-              className={style.a}
-            >
-              Youtube
-            </a>
-          </span>
-
-
-          <span className={style.span}>
+              className={style.a}>
             <FaCodepen
               size={32}
-              style={{marginRight: "5px", padding: "4px", color: "whitesmoke"}}
+              style={{marginRight: "5px", padding: "4px"}}
             />
+              codepen.io
+          </a>
 
-            <a href="https://codepen.io/koalatr33"
+          <a href="https://www.linkedin.com/in/cedric-kuchen-dev"
               target="_blank"
               rel="noopener noreferrer"
-              className={style.a}
-            >
-              codepen.io
-            </a>
-          </span>
-
-
-          <span className={style.span}>
-
+              className={style.a}>
             <FaLinkedin
               size={32}
-              style={{marginRight: "5px", padding: "4px", color: "whitesmoke"}}
+              style={{marginRight: "5px", padding: "4px"}}
             />
-
-            <a href="https://www.linkedin.com/in/cedric-kuchen-dev"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={style.a}
-            >
               LinkedIn
-            </a>
-          </span>
+          </a>
 
         </div>
       </footer>
