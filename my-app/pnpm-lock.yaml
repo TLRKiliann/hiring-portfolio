@@ -11,6 +11,9 @@ dependencies:
   '@fontsource/akaya-kanadaka':
     specifier: ^5.0.4
     version: 5.0.4
+  '@fontsource/noto-serif':
+    specifier: ^5.0.4
+    version: 5.0.4
   '@types/node':
     specifier: 20.3.3
     version: 20.3.3
@@ -107,6 +110,10 @@ packages:
 
   /@fontsource/akaya-kanadaka@5.0.4:
     resolution: {integrity: sha512-Q88tHjTJUfoQ74MLTMIeG8GAL8iSvCddoehDx1+2k7v+9OXbib0SjEfPRWmhjWLePeGBuew7HbxioN7Qmdqmcg==}
+    dev: false
+
+  /@fontsource/noto-serif@5.0.4:
+    resolution: {integrity: sha512-y/xJYNM47iAPaANa3IkRficbbmdCNooJCpY4Qq6YqWh+BwhLv3Dd9RRwdOciB9rHGJ02GAUUB6GPb91svKOZFg==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.10:
