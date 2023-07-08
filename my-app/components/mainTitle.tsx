@@ -8,12 +8,12 @@ export default function MainTitle() {
     <>
       <div className={style.mainSection}>
         
-        <div className={style.header}>
+        <div className={style.container}>
           <h3 className={style.h3}>
-            Hey there !
+            Hello ! Welcome to my portfolio. My name's -
           </h3>
           <h1 className={style.h1}>
-            I'm Cédric Kuchen
+            Cédric Kuchen
           </h1>
           <h2 className={style.h2}>
             Software Engineer.&nbsp;
