@@ -12,6 +12,12 @@
   }
 }
 
+@keyframes bg {
+  50%{
+    background-position: 100% 100%;
+  }
+}
+
 @mixin text-color($color_1, $color_2) {
   background: -webkit-linear-gradient($color_1, $color_2);
   -webkit-background-clip: text;
@@ -19,17 +25,26 @@
 }
 
 .contact {
-  width: 520px;
-  margin: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 250px;
+  background-image: linear-gradient(-225deg,#3498db 0,#9b59b6 29%,#e74c3c 67%,#f1c40f 100%);
+  background-size: 500% 500%;
+  animation: bg 8s linear infinite;
   .header {
-    margin: auto 0px;
+    margin: auto 20px;
     font-size: 2rem;
-    @include text-color(#ccc, $slategrey);
+    @include text-color(whitesmoke, $slategrey);
+    padding-top: 20px;
   }
   .divcontact {
-    margin: 30px 40px;
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
     background: linear-gradient($bg_color2, $slategrey);
     border-radius: 10px;
+    opacity: 0.85;
     padding: 10px 20px;
     
     animation-name: contact-anim;
@@ -44,7 +59,7 @@
       .h3 {
         margin: 10px;
         font-size: 1.6rem;
-        @include text-color(#ccc, $slategrey);
+        @include text-color(whitesmoke, $slategrey);
       }
     }
   }
