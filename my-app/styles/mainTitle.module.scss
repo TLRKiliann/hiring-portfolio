@@ -36,13 +36,19 @@
   0% {
     transform: scale(0.0);
     opacity: 0;
+    border: 1mm solid rgba(112,128,144, 0.8);
+    box-shadow: 0px 0px 0px $slategrey;
   }
   50% {
     transform: scale(1.2);
     opacity: 0.5;
+    border: 2mm solid rgba(112,128,144, 0.8);
+    box-shadow: 0px 0px 0px $slategrey;
   }
   100% {
     transform: scale(1.0);
+    border: 3mm ridge rgba(112,128,144, 0.8);
+    box-shadow: 0px 0px 10px $slategrey;
     opacity: 1;
   }
 }
@@ -94,7 +100,7 @@
   }
   .container {
     font-family: $akayakanadaka_font;
-    color: #ccc;
+    color: $lightgrey;
     @include params-anim(0s);
     .h3 {
       margin: auto;
@@ -105,7 +111,7 @@
     .h1 {
       margin: auto;
       font-size: 3.8rem;
-      @include text-color(#ccc, $slategrey);
+      @include text-color($lightgrey, $slategrey);
     } 
     .h2 {
       margin: auto;
@@ -141,14 +147,18 @@
         font-family: $acme_font;
         font-size: 1.1rem;
         font-weight: 600;
-        color: #ccc;
+        color: $lightgrey;
         transform: rotadeY(0deg);
         transition: ease 0.2s;
         &:hover {
           background: linear-gradient(30deg, $slategrey, $bg_color2);
+          box-shadow: 0px 0px 10px $deepskyblue;
+          color: $deepskyblue;
+          transform: rotate(-15deg);
+        }
+        &:active {
           box-shadow: 0px 0px 10px aqua;
           color: aqua;
-          transform: rotate(-15deg);
         }
       }
     }
@@ -158,7 +168,7 @@
     filter: opacity(100%);
     border: 3mm ridge rgba(112,128,144, 0.8);
     border-radius: 100%;
-    box-shadow: 0px 0px 7px $slategrey;
+    box-shadow: 0px 0px 10px $slategrey;
     
     animation-name: photo;
     animation-delay: 0s;
@@ -168,7 +178,10 @@
     transition: ease;
   }
   .photo {
-    border-radius: 50%;
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
     object-fit: cover;
   }
 }

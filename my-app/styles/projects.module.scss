@@ -109,11 +109,11 @@
     color: dodgerblue;
     .a {
       text-decoration: none;
-      font-size: 1.0rem;
+      font-size: 1.2rem;
       color: aqua;
       &:hover {
         cursor: pointer;
-        color: deepskyblue;
+        color: $deepskyblue;
       }
     }
   }
@@ -151,11 +151,11 @@
       color: dodgerblue;
       .a {
         text-decoration: none;
-        font-size: 1.0rem;
+        font-size: 1.2rem;
         color: aqua;
         &:hover {
           cursor: pointer;
-          color: deepskyblue;
+          color: $deepskyblue;
         }
       }
     }
