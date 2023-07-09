@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import style from '@/styles/navbar.module.scss'
-import Comic from '@/public/images/comic.png'
+import Comic from '@/public/images/photo_logo.png'
 
 export default function Navbar() {
   return (
@@ -12,9 +12,10 @@ export default function Navbar() {
         <div className={style.image}>
           <Image
             src={Comic}
-            width={80}
-            height={80}
+            width={60}
+            height={60}
             alt="comic of me"
+            className={style.img}
           />
         </div>
 

@@ -5,11 +5,20 @@
   height: 80px;
   display: flex;
   background: linear-gradient(30deg, $bg_color2, $black_color);
-  box-shadow: 0px 0px 7px slategrey;
+  box-shadow: 0px 0px 7px $slategrey;
   .image {
-    margin: 0px;
+    margin: auto;
+    margin-left: 10px;
     display: flex;
     align-items: center;
+    border-radius: 10%;
+    .img {
+      display: flex;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10%; 
+    }
   }
   .ul {
     width: 100%;
