@@ -110,8 +110,8 @@ export default function MainTitle() {
         <div className={style.myPhoto}>
           <Image
             src={myPicture}
-            width={150}
-            height={150}
+            width={100}
+            height={100}
             alt="picture of me"
             className={style.photo}
           />
