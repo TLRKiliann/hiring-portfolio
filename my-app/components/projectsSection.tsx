@@ -12,7 +12,7 @@ import style from '@/styles/projects.module.scss'
 
 export default function ProjectsSection() {
   return (
-    <div className={style.project}>
+    <div id="projects" className={style.project}>
       <h1 className={style.header}>
         Projects
       </h1>

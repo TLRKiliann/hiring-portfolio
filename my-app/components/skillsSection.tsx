@@ -7,8 +7,9 @@ import { FcLinux } from 'react-icons/fc'
 import style from '@/styles/skills.module.scss'
 
 export default function SkillsSection() {
+  //console.log(props, "my props is")
   return (
-    <div className={style.skills}>
+    <div id="linkskills" className={style.skills}>
       <h1 className={style.header}>
         Skills
       </h1>
