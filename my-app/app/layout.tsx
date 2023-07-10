@@ -5,7 +5,7 @@ import { Metadata } from 'next'
  
 export const metadata: Metadata = {
   title: 'Portfolio',
-  description: 'My portfolio',
+  description: 'My portfolio with Next.js',
 }
 
 export default function RootLayout({ children }: {

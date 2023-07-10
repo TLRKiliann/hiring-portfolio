@@ -28,7 +28,7 @@
   .header {
     margin: auto 20px;
     font-size: 2rem;
-    @include text-color(whitesmoke, $slategrey);
+    @include text-color($whitesmoke, $slategrey);
     padding: 20px 0px;
   }
   .designcolor {
@@ -64,7 +64,7 @@
         margin: 10px;
         font-family: $noto_serif;
         font-size: 1.2rem;
-        @include text-color(whitesmoke, $slategrey);
+        @include text-color($whitesmoke, $slategrey);
       }
     }
   }

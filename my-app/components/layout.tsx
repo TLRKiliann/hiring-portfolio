@@ -27,9 +27,9 @@ export default function Layout({ children }: PropsWithChildren) {
               scale: 1,
               opacity: 1,
               transition: {
-                delay: .4,
+                delay: .35,
                 ease: "linear",
-                duration: 0.2,
+                duration: 0.3,
               }
             },
             }}

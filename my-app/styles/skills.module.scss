@@ -24,7 +24,7 @@
   .header {
     margin: auto;
     font-size: 2rem;
-    @include text-color(#ccc, $slategrey);
+    @include text-color($lightgrey, $slategrey);
   }
   .divskills {
     margin: 10px 0px;
@@ -43,7 +43,7 @@
         margin-bottom: 20px;
         font-family: $acme_font;
         font-size: 1.6rem;
-        @include text-color(#ccc, $slategrey);        
+        @include text-color($lightgrey, $slategrey);        
       }
       .spanskills {
         margin: auto;

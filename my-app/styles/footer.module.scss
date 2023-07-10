@@ -21,12 +21,12 @@
   .a {
     display: flex;
     align-items: center;
-    background: linear-gradient(30deg, $slategrey, #282b45);
+    background: linear-gradient(30deg, $slategrey, $bg_color2);
     border-radius: 50px;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #ccc;
+    color: $lightgrey;
     padding: 0px 12px;
 
     animation-name: footer-anim;
@@ -37,8 +37,13 @@
     transform: scale(0);
     transition: ease-in;
     &:hover {
-      background: #282b45;
-      box-shadow: 0px 0px 10px #ccc;
+      background: $bg_color2;
+      box-shadow: 0px 0px 10px $lightgrey;
+      animation-play-state: paused;
+    }
+    &:active {
+      box-shadow: 0px 0px 10px $aqua;
+      color: $aqua;
     }
   }
 }
