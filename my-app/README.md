@@ -1,18 +1,40 @@
 # Portfolio
 
-## FR
+## Description
 
-Mon portfolio pour mes postulations. J'ai choisi Next.js afin de revoir comment
-on manipule le design system Sass avec Next.js
+### FR
 
-J'ai découvert également une librarie React (react-intersection-observer) pour lancer l'animation pendant que l'utilisateur scroll en descendant la page.
+J'ai choisi de faire mon portfolio avec Next.js et avec Sass, dans l'intention de m'améliorer en design et pour avoir quelque chose de présentable pour mes postulations. 
 
-## EN
+Dans l'accomplissement de ce projet, j'ai découvert `react-intersection-observer` pour lancer l'animation pendant que l'utilisateur scroll en descendant la page. Cependant, j'ai rencontré des problèmes lorsque j'ai voulu utiliser les link de la navbar. En effet, les link avec react-intersection-observer ne sont pas compatibles. J'ai donc préféré utiliser la lib framer-motion.
 
-My portfolio for my postings. I chose Next.js to review how to manipulate the
-manipulating the Sass design system with Next.js
+J'ai appris dans ce projet à manipuler la structure Next.js avec le system `app`, plutôt qu'avec le system `pages`. Etant donné que je n'avais pas l'utilité du system de routes, j'ai opté pour app. J'ai pu ainsi me rendre compte qu'il y a des différences existantes. A savoir, le fichier layout.tsx de l'app qui comprend la function `RootLayout` qui diffère de celui de l'`_app.tsx`.
 
-I also discovered a React library (react-intersection-observer) to launch the animation as the user scrolls down the page.
+J'ai également appris à optimiser les images en installant sharp.
+
+### EN
+
+I chose to do my portfolio with Next.js and Sass, with the intention of improving my design and having something presentable for my applications. 
+
+In completing this project, I discovered `react-intersection-observer` to launch the animation as the user scrolls down the page. However, I ran into problems when I tried to use the navbar links. Indeed, links with react-intersection-observer are not compatible. So I preferred to use the framer-motion lib.
+
+In this project, I learned to manipulate the Next.js structure using the `app` system, rather than the `pages` system. Since I had no use for the routes system, I opted for app. This allowed me to realize that there are some differences. Namely, the app's layout.tsx file, which includes the `RootLayout` function, differs from the `_app.tsx` file.
+
+I also learned how to optimize images by installing sharp.
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+git clone https://...
+
+cd my-app
+
+pnpm install
+
+pnpm dev
+```
 
 ## Install
 
@@ -22,36 +44,9 @@ I also discovered a React library (react-intersection-observer) to launch the an
 
 └─ $ ▶ pnpm add @fontsource/akaya-kanadaka
 
-└─ $ ▶ pnpm i react-intersection-observer --save
+└─ $ ▶ pnpm add sharp
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-## More
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+└─ $ ▶ pnpm add framer-motion
 
 ## Deploy on Vercel
 
