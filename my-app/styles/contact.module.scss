@@ -25,23 +25,27 @@
 }
 
 .contact {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  height: 250px;
-  background-image: linear-gradient(-225deg,#3498db 0,#9b59b6 29%,#e74c3c 67%,#f1c40f 100%);
-  background-size: 500% 500%;
-  animation: bg 8s linear infinite;
   .header {
     margin: auto 20px;
     font-size: 2rem;
     @include text-color(whitesmoke, $slategrey);
-    padding-top: 20px;
+    padding: 20px 0px;
   }
-  .divcontact {
-    width: 400px;
+  .designcolor {
+    display: flex;
+    width: 410px;
+    height: 122px;
     margin: auto;
-    margin-top: 10px;
+    margin-bottom: 100px;
+    padding: 0;
+    background-image: linear-gradient(-225deg,#3498db 0,
+      #9b59b6 29%,#e74c3c 67%,#f1c40f 100%);
+    background-size: 500% 500%;
+    border-radius: 10px;
+    animation: bg 8s linear infinite;
+  .divcontact {
+    width: 360px;
+    margin: auto;
     background: linear-gradient($bg_color2, $slategrey);
     border-radius: 10px;
     opacity: 0.85;
@@ -58,9 +62,11 @@
       align-items: center;
       .h3 {
         margin: 10px;
-        font-size: 1.6rem;
+        font-family: $noto_serif;
+        font-size: 1.2rem;
         @include text-color(whitesmoke, $slategrey);
       }
     }
+  }
   }
 }
