@@ -12,7 +12,7 @@ import style from '@/styles/projects.module.scss'
 
 export default function ProjectsSection() {
   return (
-    <div className={style.project}>
+    <div id="projects" className={style.project}>
       <h1 className={style.header}>
         Projects
       </h1>
@@ -52,13 +52,12 @@ export default function ProjectsSection() {
           <section className={style.section}>
             <article>
               <p className={style.paragraph}>
-                Dans ce projet, j'ai voulu rendre l'UX la plus attractive
-                et la plus professionnelle possible. Ainsi, les étapes du
-                cheminement de l'achat du produit selectionné est claire
-                pour l'utilisateur.
+                Dans ce projet, j'ai voulu rendre l'UX la plus professionnelle possible. 
+                Ainsi, les étapes du cheminement de l'achat du produit selectionné est 
+                claire pour l'utilisateur. Depuis, le choix du produit jusqu'au paiment.
                 <br />
-                J'ai utiliser Tailwind pour le design avec le theme (darkmode).
-                Pour la sécurité, j'ai utiliser Typescript et NextAuth.
+                J'ai utilisé Tailwind comme design system avec le darkmode, et Typescript, 
+                NextAuth pour rendre l'application plus sécure.
               </p>
             </article>
           </section>
@@ -111,15 +110,39 @@ export default function ProjectsSection() {
           <section className={style.section}>
             <article>
               <p className={style.paragraph}>
-                Cette webapp permet d'agender un rendez-vous avec
-                les coordonnées d'une personne, ainsi que la localisation
-                du lieu de rendez-vous avec le site de "wego.here.com".
-                Les données sont modifiables après les avoir entrées et 
-                l'utilisateur peut également enregistrer le rendez-vous
-                sur une autre page une fois terminé.
+                Cette application web permet d'agender des rendez-vous avec :
+              </p>
+                <ul className={style.ul}>
+                  <li className={style.li}>
+                    date et heure
+                  </li>
+                  <li className={style.li}>
+                    localisation du lieu
+                  </li>
+                  <li className={style.li}>
+                    nom, prénom, téléphone, e-mail
+                  </li>
+                  <li className={style.li}>
+                    une note pour écrire en quoi consiste le rendez-vous
+                  </li>
+                </ul>
+              <p>
+                La géolocalisation du rendez-vous se fait à l'aide du site: 
+                "wego.here.com". 
                 <br />
-                Mon point d'amélioration est la refactorisation du code et 
-                le style (design peu soigné).
+                Dans cette application, j'ai appris à manipuler les données 
+                à l'aide des requêtes HTTP (CRUD). J'ai utilisé AXIOS sur la 
+                partie frontend, ainsi qu'avec Node.js avec Express sur la partie 
+                backend, avec MariaDB.
+                Une base de données MySQL utilisée est sur mon server Raspberry (LAN).
+                <br />
+                Une fois les données entrées, l'utilisateur peut les modifier 
+                et les enregistrer. Lorsque le rendez-vous est terminé l'utilisateur
+                peut l'enrigistrer (sur une autre table) pour qu'il soit transférer sur 
+                une autre page, afin de ne pas perdre l'historique.
+                <br />
+                Les points d'amélioration sont la refactorisation du code 
+                et le style (trop sombre, trop bleu).
               </p>
             </article>
           </section>
@@ -161,13 +184,21 @@ export default function ProjectsSection() {
           <section className={style.section}>
             <article>
               <p className={style.paragraph}>
-                J'ai fait ce site de boulangerie, pour m'entraîner à la manipulation 
-                le css, le html et les images.
-                <br/>
-                J'ai insérer un formulaire pour commander des produits.
+                J'ai fait ce site de boulangerie, pour m'entraîner au code css, html, 
+                et à la manipulation des images.
                 <br />
-                Bien que le design présente bien et que la cohérence du site soit
-                respectée, je trouve qu'il est d'apparence un peu old-school.
+                Ce site comprend :
+                <br/>
+              </p>
+                <ul className={style.ul}>
+                  <li className={style.li}>la page principale</li>
+                  <li className={style.li}>un formulaire pour commander des produits</li>
+                  <li className={style.li}>une page pour la présentation des produits</li>
+                  <li className={style.li}>une page de contact et une page pour les allergies</li>
+                </ul>
+              <p>
+                Bien que le design présente bien et que la cohérence du site soit 
+                respectée, je le trouve, dans sa vue d'ensemble, un peu old-school.
               </p>
             </article>
           </section>
@@ -209,18 +240,31 @@ export default function ProjectsSection() {
           <section className={style.section}>
             <article>
               <p className={style.paragraph}>
-                Christophe Bonamy, directeur de l'Institut-Axis m'a 
-                demandé de lui faire un site avec Wordpress.
+                Le directeur de l'Institut-Axis m'a demandé de lui faire un site 
+                avec Wordpress pour son association, sur la gestion de crise.
+                La réalisation de ce projet s'est faite à l'aide des librairies 
+                Ocean-WP et Elementor (version gratuite). Le site est hébergé chez 
+                infomaniak.
                 <br />
-                La construction s'est faite avec son associé, Bruno Ceparro. 
-                Nous avons oeuvré ensemble pour ce projet à l'aide des librairies
-                Ocean-WP et Elementor (version gratuite). 
-                <br />
-                Bruno s'est occupé de la conception du site sur mes conseils
-                et moi j'ai développé. 
-                <br />
-                Le directeur et son Bras-droit sont ravis du résultat, malgré
-                ma remise en question quant à la cohérence du site.
+                Le site de l'Institut-Axis comporte une barre de menu pour naviguer 
+                d'une page à l'autre en fonction des thématiques, un login pour 
+                accéder au blog.
+              </p>
+              <p>
+                Cette expérience m'a appris plusieurs choses :
+              </p>
+              <ul className={style.ul}>
+                <li className={style.li}>Conceptualiser un site en fonction des attentes d'un demandeur.</li>
+                <li className={style.li}>Le choix de package chez un hébergeur (prix, taille, etc).</li>
+                <li className={style.li}>Le nom de domaine, les backup</li>
+                <li className={style.li}>Sécurité et les mises-à-jour</li>
+                <li className={style.li}>Les performances</li>
+                <li className={style.li}>Le SEO</li>
+                <li className={style.li}>Les cookies, politique de confidentialité.</li>
+              </ul>
+              <p>
+                Le directeur et son associé sont ravis du résultat. Mon impression est 
+                que la cohérence de site et le design auraient pu être améliorée.
               </p>
             </article>
           </section>
@@ -262,32 +306,21 @@ export default function ProjectsSection() {
           <section className={style.section}>
             <article>
               <p className={style.paragraph}>
-                Ma première webapp avec Python3. Je suis tellement fier de ce projet de par
-                le nombre de fonctionnalité que j'ai intégré, le nombre de problème rencontré
-                et que j'ai résolu, la créativité dont j'ai fait preuve et qui font que cette
-                application est une webapp de soins améliorée.
+                Ma première webapp avec Python3 (LAN). Je suis tellement fier de ce projet de 
+                par le nombre de fonctionnalités que j'ai intégré, le nombre de problématiques 
+                rencontrées et que j'ai pu résoudre, la créativité dont j'ai fait preuve et qui 
+                font que cette application est une webapp de soins améliorée.
               </p>
               <p className={style.paragraph}>
                 Pour la construire, j'ai utlisé :
               </p>
               <ul className={style.ul}>
-                <li className={style.li}>
-                  tkinter pour la GUI.
-                </li>
-                <li className={style.li}>
-                  matplotlib pour le rendu des paramètres vitaux.
-                </li>
-                <li className={style.li}>
-                  multi-processing pour ouvrir 
-                  des nouvelles fenêtre et rendre l'UX plus agréable.
-                </li>
-                <li className={style.li}>
-                  multi-threading pour les alarmes 
-                  programmables.
-                </li>
-                <li className={style.li}>
-                  MySQL pour le tableau récapitulatif des données patients.
-                </li>
+                <li className={style.li}>tkinter pour la GUI.</li>
+                <li className={style.li}>matplotlib pour le rendu des paramètres vitaux.</li>
+                <li className={style.li}>multi-processing pour ouvrir 
+                  des nouvelles fenêtre et rendre l'UX plus agréable.</li>
+                <li className={style.li}>multi-threading pour les alarmes programmables.</li>
+                <li className={style.li}>MySQL pour le tableau récapitulatif des données patients.</li>
               </ul>
             </article>
           </section>

@@ -56,7 +56,7 @@ export default function MainTitle() {
             Software Engineer.&nbsp;
           </h2>
           <p className={style.paragraph}>
-            Self-taught & passionated by web development.
+            Self-taught and passionate about web development.
           </p>
 
           <div className={style.divlogo}>
@@ -110,8 +110,8 @@ export default function MainTitle() {
         <div className={style.myPhoto}>
           <Image
             src={myPicture}
-            width={150}
-            height={150}
+            width={100}
+            height={100}
             alt="picture of me"
             className={style.photo}
           />

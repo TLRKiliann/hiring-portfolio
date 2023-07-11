@@ -1,19 +1,43 @@
-//import useSWR from 'swr'
-//import Link from 'next/link'
-import React, { PropsWithChildren } from "react";
-import Navbar from './navbar'
-import Footer from './footer'
+'use client'
+
+import { motion, useInView, useAnimation } from 'framer-motion';
+import React, { useRef, useEffect, PropsWithChildren } from 'react'
 
 export default function Layout({ children }: PropsWithChildren) {
-  //const { data, error } = useSWR('/api/navigation', fetcher)
- 
-  //if (error) return <div>Failed to load</div>
-  //if (!data) return <div>Loading...</div>
+
+  const ref = useRef(null)
+  const isInView = useInView(ref, {once: true})
+  const mainControls = useAnimation()
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible")
+    }
+  }, [isInView])
   return (
     <>
-      <Navbar />
-      <main>{children}</main>
-      <Footer />
+      <main>
+        <div ref={ref}>
+          <motion.div initial="hidden" animate={mainControls} variants={{
+            hidden: {
+              scale: .8,
+              opacity: 0
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: .35,
+                ease: "linear",
+                duration: 0.3,
+              }
+            },
+            }}
+          >
+            {children}
+          </motion.div>
+        </div>
+      </main>
     </>
   )
 }

@@ -14,15 +14,27 @@ export default function Navbar() {
             src={Comic}
             width={60}
             height={60}
-            alt="comic of me"
+            alt="small photo"
             className={style.img}
           />
         </div>
 
         <ul className={style.ul}>
-          <li className={style.li}><Link href="/navbar" className={style.link}>Skills</Link></li>
-          <li className={style.li}><Link href="/navbar" className={style.link}>Projects</Link></li>
-          <li className={style.li}><Link href="/navbar" className={style.link}>Contact</Link></li>
+          <li className={style.li}>
+            <Link href="#linkskills" scroll={false} className={style.link}>
+              Skills
+            </Link>
+          </li>
+          <li className={style.li}>
+            <Link href="#projects" scroll={false} className={style.link}>
+              Projects
+            </Link>
+          </li>
+          <li className={style.li}>
+            <Link href="#contact" scroll={false} className={style.link}>
+              Contact
+            </Link>
+          </li>
         </ul>
 
       </nav>
