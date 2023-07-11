@@ -56,7 +56,7 @@ export default function MainTitle() {
             Software Engineer.&nbsp;
           </h2>
           <p className={style.paragraph}>
-            Self-taught & passionated by web development.
+            Self-taught and passionate about web development.
           </p>
 
           <div className={style.divlogo}>
