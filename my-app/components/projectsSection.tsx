@@ -126,7 +126,7 @@ export default function ProjectsSection() {
                     une note pour écrire en quoi consiste le rendez-vous
                   </li>
                 </ul>
-              <p>
+              <p className={style.paragraph}>
                 La géolocalisation du rendez-vous se fait à l'aide du site: 
                 "wego.here.com". 
                 <br />
@@ -196,7 +196,7 @@ export default function ProjectsSection() {
                   <li className={style.li}>une page pour la présentation des produits</li>
                   <li className={style.li}>une page de contact et une page pour les allergies</li>
                 </ul>
-              <p>
+              <p className={style.paragraph}>
                 Bien que le design présente bien et que la cohérence du site soit 
                 respectée, je le trouve, dans sa vue d'ensemble, un peu old-school.
               </p>
@@ -250,7 +250,7 @@ export default function ProjectsSection() {
                 d'une page à l'autre en fonction des thématiques, un login pour 
                 accéder au blog.
               </p>
-              <p>
+              <p className={style.paragraph}>
                 Cette expérience m'a appris plusieurs choses :
               </p>
               <ul className={style.ul}>
@@ -262,7 +262,7 @@ export default function ProjectsSection() {
                 <li className={style.li}>Le SEO</li>
                 <li className={style.li}>Les cookies, politique de confidentialité.</li>
               </ul>
-              <p>
+              <p className={style.paragraph}>
                 Le directeur et son associé sont ravis du résultat. Mon impression est 
                 que la cohérence de site et le design auraient pu être améliorée.
               </p>

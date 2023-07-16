@@ -43,30 +43,49 @@
     background-size: 500% 500%;
     border-radius: 10px;
     animation: bg 8s linear infinite;
-  .divcontact {
-    width: 360px;
-    margin: auto;
-    background: linear-gradient($bg_color2, $slategrey);
-    border-radius: 10px;
-    opacity: 0.85;
-    padding: 10px 20px;
-    
-    animation-name: contact-anim;
-    animation-delay: 0s;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    transform: translateY(0px);
-    transition: ease;
-    .divlogocontact {
-      display: flex;
-      align-items: center;
-      .h3 {
-        margin: 10px;
-        font-family: $noto_serif;
-        font-size: 1.2rem;
-        @include text-color($whitesmoke, $slategrey);
+    .divcontact {
+      width: 360px;
+      margin: auto;
+      background: linear-gradient($bg_color2, $slategrey);
+      border-radius: 10px;
+      opacity: 0.85;
+      padding: 10px 20px;
+      
+      animation-name: contact-anim;
+      animation-delay: 0s;
+      animation-duration: 1s;
+      animation-timing-function: ease;
+      transform: translateY(0px);
+      transition: ease;
+      .divlogocontact {
+        display: flex;
+        align-items: center;
+        .h3 {
+          margin: 10px;
+          font-family: $noto_serif;
+          font-size: 1.2rem;
+          @include text-color($whitesmoke, $slategrey);
+        }
       }
     }
   }
+}
+
+@media screen and (max-width: 900px) {
+  .contact {
+    .header {}
+    .designcolor {
+      width: 310px;
+      height: 120px;
+      .divcontact {
+        width: 80%;
+        margin: auto;
+        .divlogocontact {
+          .h3 {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
   }
 }

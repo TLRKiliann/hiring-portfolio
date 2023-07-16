@@ -1,26 +1,6 @@
 @import 'fonts.scss';
 @import 'colors.scss';
 
-@keyframes grid-anim {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.1;
-  }
-}
-
-@keyframes titles {
-  0% {
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
 @keyframes logo {
   0% {
     transform: translateY(100px);
@@ -32,45 +12,15 @@
   }
 }
 
-@keyframes photo {
-  0% {
-    transform: scale(0.0);
-    opacity: 0;
-    border: 1mm solid rgba(112,128,144, 0.8);
-    box-shadow: 0px 0px 0px $slategrey;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 0.5;
-    border: 2mm solid rgba(112,128,144, 0.8);
-    box-shadow: 0px 0px 0px $slategrey;
-  }
-  100% {
-    transform: scale(1.0);
-    border: 3mm ridge rgba(112,128,144, 0.8);
-    box-shadow: 0px 0px 10px $slategrey;
-    opacity: 1;
-  }
-}
-
 @mixin text-color($color_1, $color_2) {
   background: -webkit-linear-gradient($color_1, $color_2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-@mixin params-anim($delay) {
-  animation-name: titles;
-  animation-delay: $delay;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  transform: translateX(0px);
-  transition: ease;
-}
-
 .mainSection {
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 140px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -87,11 +37,6 @@
     height: 180px;
     opacity: 0.1;
     z-index: -1;
-
-    animation-name: grid-anim;
-    animation-delay: 0s;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
   }
   .griditem:nth-child(3n) {
     background-color: $aqua;
@@ -102,27 +47,44 @@
   .container {
     font-family: $akayakanadaka_font;
     color: $lightgrey;
-    @include params-anim(0s);
     .h3 {
       margin: auto;
       text-align: justify;
-      font-size: 2rem;
-      @include text-color($slategrey, $dimgrey);
+      font-family: $noto_serif;
+      font-size: 1.8rem;
+      @include text-color($slategrey, $aqua);
     }
     .h1 {
       margin: auto;
+      font-family: $noto_serif;
       font-size: 3.8rem;
       @include text-color($lightgrey, $slategrey);
+      text-shadow: 1px 1px 1px $lightgrey,
+      2px 2px 2px $slategrey,
+      3px 3px 3px $slategrey,
+      4px 4px 4px $slategrey,
+      5px 5px 5px $slategrey,
+      7px 7px 0px $slategrey;
     } 
     .h2 {
       margin: auto;
-      font-size: 2.8rem;
-      @include text-color($slategrey, $dimgrey);
+      font-family: $noto_serif;
+      font-size: 2.3rem;
+      @include text-color($lightgrey, $slategrey);
     }
     .paragraph {
-      margin: auto;
-      font-size: 2.6rem;
-      @include text-color($slategrey, #333);
+      margin-top: 0px;
+      font-family: $noto_serif;
+      font-size: 2.2rem;
+      background-color: $aqua;
+      background-image: linear-gradient(90deg, $aqua, violet, hotpink);
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      -moz-text-fill-color: transparent;
+      text-align: justify;
+      text-justify: inter-word;
     }
     .divlogo {
       margin-top: 20px;
@@ -130,7 +92,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       animation-name: logo;
       animation-delay: 0s;
       animation-duration: 1s;
@@ -142,15 +103,14 @@
         align-items: center;
         background: linear-gradient(30deg, $slategrey, $bg_color2);
         border-radius: 50px;
-        padding: 5px 12px;
         text-decoration: none;
-        
         font-family: $acme_font;
         font-size: 1.1rem;
         font-weight: 600;
         color: $lightgrey;
         transform: rotadeY(0deg);
         transition: ease 0.2s;
+        padding: 5px 12px;
         &:hover {
           background: linear-gradient(30deg, $slategrey, $bg_color2);
           box-shadow: 0px 0px 10px $deepskyblue;
@@ -166,26 +126,67 @@
   }
   .myPhoto {
     display: flex;
-    margin-right: 0px;
+    margin-top: -100px;
+    margin-right: 50px;
     width: 180px;
     height: auto;
     filter: opacity(100%);
-    border: 3mm ridge rgba(112,128,144, 0.8);
     border-radius: 100%;
-    box-shadow: 0px 0px 10px $slategrey;
-    
-    animation-name: photo;
-    animation-delay: 0s;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    transform: scale(1.0);
-    transition: ease;
+    box-shadow: 0px 0px 7px $aqua;
+    .photo {
+      display: flex;
+      width: 100%;
+      height: auto;
+      border-radius: 100%;
+      object-fit: cover;
+    }
   }
-  .photo {
-    display: flex;
-    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .mainSection {
+    max-width: 1200px;
+    margin: 0px auto;
+    .container {
+      margin-top: 160px;
+      .h3 {
+        font-size: 0.9rem;
+      }
+      .h1 {
+        font-size: 1.5rem;
+      } 
+      .h2 {
+        font-size: 1.4rem;
+      }
+      .paragraph {
+        font-size: 0.9rem;
+      }
+      .divlogo {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: -40px;
+        /*border: 1px solid white;*/
+        .a {
+          margin-top: 40px;
+          font-size: 0.9;
+          padding: 5px 12px;
+        }
+      }
+    }
+  }
+  .myPhoto {
+    position: absolute;
+    top: 210px;
+    left: 120px;
+    width: 120px;
     height: auto;
-    border-radius: 100%;
-    object-fit: cover;
+    .photo {
+      display: flex;
+      width: 50%;
+      height: auto;
+      border-radius: 100%;
+      object-fit: cover;
+    }
   }
 }

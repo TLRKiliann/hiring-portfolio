@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: $bg_color;
+  background: linear-gradient(90deg, $bg_color2, $bg_color);
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -14,5 +14,5 @@ footer {
   display: flex;
   height: 100px;
   background: linear-gradient(30deg, $bg_color2, $black_color);
-  box-shadow: 0px 0px 7px $slategrey;
+  box-shadow: 0px 0px 7px $bg_color;
 }
