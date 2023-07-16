@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
+//import Link from 'next/link'
 import Image from 'next/image'
 import style from '@/styles/navbar.module.scss'
 import Comic from '@/public/images/photo_logo.png'
@@ -21,19 +21,19 @@ export default function Navbar() {
 
         <ul className={style.ul}>
           <li className={style.li}>
-            <Link href="#linkskills" scroll={false} className={style.link}>
+            <a href="#linkskills" className={style.link}>
               Skills
-            </Link>
+            </a>
           </li>
           <li className={style.li}>
-            <Link href="#projects" scroll={false} className={style.link}>
+            <a href="#projects" className={style.link}>
               Projects
-            </Link>
+            </a>
           </li>
           <li className={style.li}>
-            <Link href="#contact" scroll={false} className={style.link}>
+            <a href="#contact" className={style.link}>
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
 

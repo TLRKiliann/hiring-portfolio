@@ -21,15 +21,17 @@ export default function Layout({ children }: PropsWithChildren) {
           <motion.div initial="hidden" animate={mainControls} variants={{
             hidden: {
               scale: .3,
+              y: 200,
               opacity: 0
             },
             visible: {
               scale: 1,
+              y: 0,
               opacity: 1,
               transition: {
                 delay: .35,
                 ease: "linear",
-                duration: 0.3,
+                duration: 0.35,
               }
             },
             }}
