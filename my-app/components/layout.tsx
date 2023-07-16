@@ -20,7 +20,7 @@ export default function Layout({ children }: PropsWithChildren) {
         <div ref={ref}>
           <motion.div initial="hidden" animate={mainControls} variants={{
             hidden: {
-              scale: .8,
+              scale: .3,
               opacity: 0
             },
             visible: {

@@ -70,7 +70,7 @@
 
 .mainSection {
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 140px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -106,23 +106,41 @@
     .h3 {
       margin: auto;
       text-align: justify;
-      font-size: 2rem;
-      @include text-color($slategrey, $dimgrey);
+      font-family: $noto_serif;
+      font-size: 1.8rem;
+      @include text-color($slategrey, $aqua);
     }
     .h1 {
       margin: auto;
+      font-family: $noto_serif;
       font-size: 3.8rem;
       @include text-color($lightgrey, $slategrey);
+      text-shadow: 1px 1px 1px $lightgrey,
+      2px 2px 2px $slategrey,
+      3px 3px 3px $slategrey,
+      4px 4px 4px $slategrey,
+      5px 5px 5px $slategrey,
+      7px 7px 0px $slategrey;
     } 
     .h2 {
       margin: auto;
-      font-size: 2.8rem;
-      @include text-color($slategrey, $dimgrey);
+      font-family: $noto_serif;
+      font-size: 2.3rem;
+      @include text-color($lightgrey, $slategrey);
     }
     .paragraph {
-      margin: auto;
-      font-size: 2.6rem;
-      @include text-color($slategrey, #333);
+      margin-top: 0px;
+      font-family: $noto_serif;
+      font-size: 2.2rem;
+      background-color: $aqua;
+      background-image: linear-gradient(90deg, $aqua, violet, hotpink);
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      -moz-text-fill-color: transparent;
+      text-align: justify;
+      text-justify: inter-word;
     }
     .divlogo {
       margin-top: 20px;
@@ -130,7 +148,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-
+      
       animation-name: logo;
       animation-delay: 0s;
       animation-duration: 1s;
