@@ -30,14 +30,16 @@ export default function Navbar() {
               Projects
             </a>
           </li>
+        </ul>
+      </nav>
+    </>
+  )
+}
+
+/*
           <li className={style.li}>
             <a href="#contact" className={style.link}>
               Contact
             </a>
           </li>
-        </ul>
-
-      </nav>
-    </>
-  )
-}
+*/

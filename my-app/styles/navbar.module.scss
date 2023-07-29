@@ -25,27 +25,30 @@
     display: flex;
     align-items: center;
     justify-content: right;
-  }
-  .li {
-    list-style: none;
-    padding: 10px 0px;
+    .li {
+      list-style: none;
+      padding: 10px 0px;
+    }
   }
   .li, a {
-    margin: 0px 20px;
+    margin: 0px;
+    margin-right: 20px;
     text-decoration: none;
     font-family: $akayakanadaka_font;
     font-size: 1.6rem;
     font-weight: 600;
-    color: $lightgrey;
-    transition: transform ease .2s;
+    color: $slategrey;
     padding: 10px;
+    transition: transform ease 0.2s;
     &:hover {
-      transform: scale(1.15);
-      color: $deepskyblue;
+      transform: scale(1.1);
     }
     &:active {
-
       color: $aqua;
+    }
+    a:hover {
+      transform: scale(1.15);
+      color: $deepskyblue;
     }
   }
 }
