@@ -39,9 +39,8 @@
   .spanlogo {
     margin-top: 20px;
     display: flex;
-    background: $black_color;
+    background: $bg_color;
     border: 1px solid rgba(112,128,144, 0.5);
-    /*box-shadow: 0px 0px 7px $slategrey;*/
     border-radius: 10px;
     padding: 10px 0px;
     .divlogo {
@@ -68,17 +67,19 @@
       font-size: 18px;
       font-weight: bold;
       
-      color: $lightgrey;
+      color: rgba(112,128,144, 1);
 
-      background: linear-gradient(7deg, rgba(141, 154, 166, 0.9) 0%, rgba(0,0,0, 0.35) 100%);
+      background: linear-gradient(15deg,
+        rgba(112,128,144, 0.5) 10%, 
+        rgba(0, 0, 0, 0.5) 100%);
       border-radius: 7px;
       border: none;
       outline: none;
       filter: contrast(200%);
       padding: 10px 20px;
       &:hover {
-        background: $bg_color2;
-        color: $slategrey; 
+        background: rgba(112,128,144, 0.5);
+        color: $bg_color2; 
       }
     }
   }
@@ -86,8 +87,7 @@
     margin: 20px 0px;
     height: 240px;
     background: $black_color;
-    border: 1px solid $slategrey;
-    box-shadow: 0px 0px 7px $slategrey;
+    border: 1px solid rgba(112,128,144, 0.5);
     border-radius: 7px;
     overflow-y: scroll;
     scroll-behavior: smooth;
