@@ -17,7 +17,12 @@ export default function Page() {
 
       <div className={style.maindivimg}>
         <div className={style.divbgimg}>
-          <Image src={path} width="500" height="auto" className={style.bg_img} />
+          <Image 
+            src={path} 
+            width="500" height="auto" 
+            className={style.bg_img} 
+            alt="image bg"
+          />
         </div>
       </div>
 
