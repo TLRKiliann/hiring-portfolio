@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image'
+import ButtonHandleCollapse from './buttonHandleCollapse'
 import { SiTailwindcss, SiMongoose } from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
 import Ecommerce from '@/public/images/e-commerce.png'
@@ -47,15 +48,8 @@ export default function ProjectOne() {
         </div>
       </span>
 
-      <div className={style.divbtncoll}>
-        <button 
-          type="button" 
-          onClick={handleCollapse} 
-          className={style.btncollapse}
-        >
-          Read more
-        </button>
-      </div>
+      <ButtonHandleCollapse handleCollapse={handleCollapse} />
+
       <div isOpened={isOpened}>
         {isOpened === true ? (
           <section className={style.section}>

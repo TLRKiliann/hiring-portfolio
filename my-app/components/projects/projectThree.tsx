@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image'
+import ButtonHandleCollapse from './buttonHandleCollapse'
 import { FaSass } from 'react-icons/fa'
 import { SiVitest } from 'react-icons/si'
 import Boulangerie from '@/public/images/boulangerie.png'
@@ -9,10 +10,10 @@ import style from '@/styles/projects.module.scss'
 
 export default function ProjectThree() {
 
-  const [ isOpened3, setIsOpened3 ] = useState<boolean>(false);
+  const [ isOpened, setIsOpened ] = useState<boolean>(false);
 
-  const handleCollapse3 = () => {
-    setIsOpened3(!isOpened3);
+  const handleCollapse = () => {
+    setIsOpened(!isOpened);
   };
 
   return (
@@ -42,17 +43,10 @@ export default function ProjectThree() {
         </div>
       </span>
       
-      <div className={style.divbtncoll}>
-        <button 
-          type="button" 
-          onClick={handleCollapse3} 
-          className={style.btncollapse}
-        >
-          Read more
-        </button>
-      </div>
-      <div isOpened3={isOpened3}>
-        {isOpened3 === true ? (            
+      <ButtonHandleCollapse handleCollapse={handleCollapse} />
+
+      <div isOpened={isOpened}>
+        {isOpened === true ? (            
           <section className={style.section}>
             <p className={style.paragraph}>
               J'ai fait ce site de boulangerie, pour m'entraîner au code css, html, 

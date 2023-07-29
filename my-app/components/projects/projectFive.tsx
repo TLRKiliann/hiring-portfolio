@@ -2,17 +2,18 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image'
+import ButtonHandleCollapse from './buttonHandleCollapse'
 import { FaPython } from 'react-icons/fa'
 import { SiMysql } from 'react-icons/si'
 import TimeTrack from '@/public/images/time-track.png'
 import style from '@/styles/projects.module.scss'
 
-export default function ProjectFive() {
+export default function ProjectFive(){
 
-  const [ isOpened5, setIsOpened5 ] = useState<boolean>(false);
+  const [ isOpened, setIsOpened ] = useState<boolean>(false);
 
-  const handleCollapse5 = () => {
-    setIsOpened5(!isOpened5);
+  const handleCollapse = () => {
+    setIsOpened(!isOpened);
   };
 
   return (
@@ -42,18 +43,10 @@ export default function ProjectFive() {
         </div>
       </span>
 
-      <div className={style.divbtncoll}>
-        <button 
-          type="button" 
-          onClick={handleCollapse5} 
-          className={style.btncollapse}
-        >
-          Read more
-        </button>
-      </div>
+      <ButtonHandleCollapse handleCollapse={handleCollapse} />
 
-      <div isOpened5={isOpened5}>
-        {isOpened5 === true ? (            
+      <div isOpened={isOpened}>
+        {isOpened === true ? (            
           <section className={style.section}>
             <p className={style.paragraph}>
               Ma première webapp avec Python3 (LAN). Je suis tellement fier de ce projet de 

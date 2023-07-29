@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image'
+import ButtonHandleCollapse from './buttonHandleCollapse'
 import { FaSass } from 'react-icons/fa'
 import { SiMysql, SiVitest } from 'react-icons/si'
 import Agenda from '@/public/images/agenda-map.png'
@@ -9,10 +10,10 @@ import style from '@/styles/projects.module.scss'
 
 export default function ProjectTwo() {
 
-  const [ isOpened2, setIsOpened2 ] = useState<boolean>(false);
+  const [ isOpened, setIsOpened ] = useState<boolean>(false);
 
-  const handleCollapse2 = () => {
-    setIsOpened2(!isOpened2);
+  const handleCollapse = () => {
+    setIsOpened(!isOpened);
   };
 
   return (
@@ -47,17 +48,10 @@ export default function ProjectTwo() {
         </div>
       </span>
 
-      <div className={style.divbtncoll}>
-        <button 
-          type="button" 
-          onClick={handleCollapse2} 
-          className={style.btncollapse}
-        >
-          Read more
-        </button>
-      </div>
-      <div isOpened2={isOpened2}>
-        {isOpened2 === true ? (
+      <ButtonHandleCollapse handleCollapse={handleCollapse} />
+
+      <div isOpened={isOpened}>
+        {isOpened === true ? (
           <section className={style.section}>
 
             <p className={style.paragraph}>

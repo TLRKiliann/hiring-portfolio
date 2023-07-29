@@ -2,16 +2,17 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image'
+import ButtonHandleCollapse from './buttonHandleCollapse'
 import { FaWordpress } from 'react-icons/fa'
 import Axis from '@/public/images/institut-axis.png'
 import style from '@/styles/projects.module.scss'
 
 export default function ProjectFour() {
 
-  const [ isOpened4, setIsOpened4 ] = useState<boolean>(false);
+  const [ isOpened, setIsOpened ] = useState<boolean>(false);
 
-  const handleCollapse4 = () => {
-    setIsOpened4(!isOpened4);
+  const handleCollapse = () => {
+    setIsOpened(!isOpened);
   };
 
   return (
@@ -36,18 +37,10 @@ export default function ProjectFour() {
         </div>
       </span>
 
-      <div className={style.divbtncoll}>
-        <button 
-          type="button" 
-          onClick={handleCollapse4} 
-          className={style.btncollapse}
-        >
-          Read more
-        </button>
-      </div>
+      <ButtonHandleCollapse handleCollapse={handleCollapse} />
 
-      <div isOpened4={isOpened4}>
-        {isOpened4 === true ? (            
+      <div isOpened={isOpened}>
+        {isOpened === true ? (            
           <section className={style.section}>
             <p className={style.paragraph}>
               Le directeur de l'Institut-Axis m'a demandé de lui faire un site 
