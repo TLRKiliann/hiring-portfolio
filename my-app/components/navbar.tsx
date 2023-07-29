@@ -1,8 +1,7 @@
 import React from 'react'
-//import Link from 'next/link'
 import Image from 'next/image'
 import style from '@/styles/navbar.module.scss'
-import Comic from '@/public/images/photo_logo.png'
+import Computer from '@/public/images/computing.png'
 
 export default function Navbar() {
   return (
@@ -11,7 +10,7 @@ export default function Navbar() {
 
         <div className={style.image}>
           <Image
-            src={Comic}
+            src={Computer}
             width={60}
             height={60}
             alt="small photo"
@@ -35,11 +34,3 @@ export default function Navbar() {
     </>
   )
 }
-
-/*
-          <li className={style.li}>
-            <a href="#contact" className={style.link}>
-              Contact
-            </a>
-          </li>
-*/

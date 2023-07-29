@@ -20,6 +20,9 @@ dependencies:
   '@types/react':
     specifier: 18.2.14
     version: 18.2.14
+  '@types/react-collapse':
+    specifier: ^5.0.1
+    version: 5.0.1
   '@types/react-dom':
     specifier: 18.2.6
     version: 18.2.6
@@ -80,6 +83,7 @@ packages:
 
   /@emotion/memoize@0.7.4:
     resolution: {integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -296,6 +300,12 @@ packages:
 
   /@types/prop-types@15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
+    dev: false
+
+  /@types/react-collapse@5.0.1:
+    resolution: {integrity: sha512-Iq3OrqvzCIP0DmAawU4T2VKH6XAplbjo/D7Qk14mcfQ92plU+OrA2SF10r2XrcFg1Wvya/5f8w1vS29RVpdoLQ==}
+    dependencies:
+      '@types/react': 18.2.14
     dev: false
 
   /@types/react-dom@18.2.6:

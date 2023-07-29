@@ -9,7 +9,7 @@
 
 @mixin container-project() {
   width: 28%;
-  background: linear-gradient(30deg, $slategrey, $bg_color2);
+  background: linear-gradient(30deg, rgba(141, 154, 166, 0.2), $bg_color2);
   border: none;
   outline: none;
   border-radius: 20px;
@@ -28,21 +28,19 @@
     width: 100%;
     height: auto;
     border-radius: 7px;
-    border: 1px solid $slategrey;
     filter: opacity(85%);
     .img {
       width: 100%;
       height: auto;
-      object-fit: cover;
       border-radius: 7px;
+      object-fit: cover;
     }
   }
   .spanlogo {
     margin-top: 20px;
     display: flex;
-    background: $black_color;
-    border: 1px solid $slategrey;
-    box-shadow: 0px 0px 7px $slategrey;
+    background: $bg_color;
+    border: 1px solid rgba(112,128,144, 0.5);
     border-radius: 10px;
     padding: 10px 0px;
     .divlogo {
@@ -51,7 +49,7 @@
       margin: 10px auto;
       background: $bg_color2;
       border-radius: 20px;
-      box-shadow: 0px 0px 4px inset $slategrey;
+      box-shadow: 0px 0px 4px inset rgba(112,128,144, 0.75);
       padding: 10px;
       .titlelogo {
         margin: auto 5px;
@@ -60,19 +58,43 @@
       }
     }
   }
+  .divbtncoll {
+    width: 100%;
+    margin: 20px auto;
+    .btncollapse {
+      width: 100%;
+      font-family: $noto_serif;
+      font-size: 18px;
+      font-weight: bold;
+      
+      color: rgba(112,128,144, 1);
+
+      background: linear-gradient(15deg,
+        rgba(112,128,144, 0.5) 10%, 
+        rgba(0, 0, 0, 0.5) 100%);
+      border-radius: 7px;
+      border: none;
+      outline: none;
+      filter: contrast(200%);
+      padding: 10px 20px;
+      &:hover {
+        background: rgba(112,128,144, 0.5);
+        color: $bg_color2; 
+      }
+    }
+  }
   .section {
     margin: 20px 0px;
     height: 240px;
     background: $black_color;
-    border: 1px solid $slategrey;
-    box-shadow: 0px 0px 7px $slategrey;
+    border: 1px solid rgba(112,128,144, 0.5);
     border-radius: 7px;
     overflow-y: scroll;
     scroll-behavior: smooth;
     padding: 0px 20px;
     .paragraph {
       text-align: justify;
-      text-justify: inter-word;
+      text-justify: auto;
       font-family: $noto_serif;
     }
     .ul {
@@ -88,7 +110,6 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    color: dodgerblue;
     .a {
       text-decoration: none;
       font-size: 1.2rem;
@@ -135,7 +156,7 @@
       .a {
         text-decoration: none;
         font-size: 1.2rem;
-        color: skyblue;
+        color: $aqua;
         &:hover {
           cursor: pointer;
           color: $deepskyblue;

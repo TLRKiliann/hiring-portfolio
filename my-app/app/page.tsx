@@ -4,7 +4,6 @@ import Navbar from '@/components/navbar'
 import MainTitle from '@/components/mainTitle'
 import SkillsSection from '@/components/skillsSection'
 import ProjectsSection from '@/components/projectsSection'
-//import ContactSection from '@/components/contactSection'
 import Footer from '@/components/footer'
 import style from '@/styles/page.module.scss'
 import path from '@/public/images/green_path.jpg'
@@ -17,7 +16,12 @@ export default function Page() {
 
       <div className={style.maindivimg}>
         <div className={style.divbgimg}>
-          <Image src={path} width="500" height="auto" className={style.bg_img} />
+          <Image 
+            src={path} 
+            width="500" height="auto" 
+            className={style.bg_img} 
+            alt="image bg"
+          />
         </div>
       </div>
 
@@ -47,11 +51,3 @@ export default function Page() {
     </>
   )
 }
-
-/*
-      <Layout>
-        <section className={style.sectionContactSection}>
-          <ContactSection />
-        </section>
-      </Layout>
-*/
