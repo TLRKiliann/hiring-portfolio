@@ -7,45 +7,47 @@ export default function MainTitle() {
   return (
     <>
       <div className={style.mainSection}>
-        <div className={style.grid}>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-          <div className={style.griditem}></div>
-        </div>
         <div className={style.container}>
+
+          <div className={style.grid}>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+            <div className={style.griditem}></div>
+          </div>
+
           <h3 className={style.h3}>
             Hello ! Welcome to my portfolio. My name's -
           </h3>
@@ -56,7 +58,7 @@ export default function MainTitle() {
             Software Engineer.&nbsp;
           </h2>
           <p className={style.paragraph}>
-            Self-taught and passionate about web development.
+            Self-taught & passionate about web development.
           </p>
 
           <div className={style.divlogo}>

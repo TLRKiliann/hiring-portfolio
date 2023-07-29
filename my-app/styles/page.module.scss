@@ -1,5 +1,22 @@
 @import 'colors.scss';
 
+.maindivimg {
+  display: flex;
+  justify-content: center; 
+  .divbgimg {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+    z-index: -1;
+    .bg_img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+
 .sectionMainTitle {
   padding: 40px 20px;
 }

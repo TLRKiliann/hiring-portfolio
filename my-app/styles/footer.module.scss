@@ -1,18 +1,6 @@
 @import 'fonts.scss';
 @import 'colors.scss';
 
-@keyframes footer-anim {
-  0% {
-    transform: scale(0.75);
-  }
-  50% {
-    transform: scale(1.0);
-  }
-  100% {
-    transform: scale(0.75);
-  }
-}
-
 .divfooterlogo {
   width: 100%;
   display: flex;
@@ -28,35 +16,16 @@
     font-weight: 600;
     color: $lightgrey;
     padding: 0px 12px;
-
-    animation-name: footer-anim;
-    animation-delay: 0s;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: revert;
-    transform: scale(0);
-    transition: ease-in;
     &:hover {
-      background: $bg_color2;
-      box-shadow: 0px 0px 10px $lightgrey;
-      animation-play-state: paused;
-    }
-    &:active {
       box-shadow: 0px 0px 10px $aqua;
       color: $aqua;
     }
-  }
-}
+    &:active {
+      background: $bg_color2;
+      box-shadow: 0px 0px 10px $deepskyblue;
+      color: $deepskyblue;
 
-@keyframes footer-anim-sceen {
-  0% {
-    transform: scale(0.75);
-  }
-  50% {
-    transform: scale(0.8);
-  }
-  100% {
-    transform: scale(0.75);
+    }
   }
 }
 
@@ -76,18 +45,9 @@
       font-size: 0.8rem;
       color: $lightgrey;
       padding: 0px 5px;
-
-      animation-name: footer-anim-sceen;
-      animation-delay: 0s;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      animation-timing-function: revert;
-      transform: scale(0);
-      transition: ease-in;
       &:hover {
         background: $bg_color2;
         box-shadow: 0px 0px 10px $lightgrey;
-        animation-play-state: paused;
       }
       &:active {
         box-shadow: 0px 0px 10px $aqua;

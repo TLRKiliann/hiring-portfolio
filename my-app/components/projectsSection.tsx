@@ -21,7 +21,7 @@ export default function ProjectsSection() {
 
         <div className={style.subdivproject}>
           <h2 className={style.h2}>
-            E-commerce Modern Clothing
+            Site e-commerce
           </h2>
           <div className={style.divimg}>
             <Image 
@@ -78,7 +78,7 @@ export default function ProjectsSection() {
 
         <div className={style.subdivproject}>
           <h2 className={style.h2}>
-            Agenda Map
+            Rendez-vous géolocalisables
           </h2>
           <div className={style.divimg}>
             <Image 
@@ -158,7 +158,7 @@ export default function ProjectsSection() {
 
         <div className={style.subdivproject}>
           <h2 className={style.h2}>
-            Site de boulangerie
+            Site vitrine
           </h2>
           <div className={style.divimg}>
             <Image 
@@ -279,7 +279,7 @@ export default function ProjectsSection() {
 
         <div className={style.subdivproject}>
           <h2 className={style.h2}>
-            Webapp Python3 for Nurses
+            App de soins infirmiers
           </h2>
           <div className={style.divimg}>
             <Image 
@@ -339,6 +339,10 @@ export default function ProjectsSection() {
           </span>
         </div>
 
+      </div>
+      <div className={style.parentvertical}>
+        <p className={style.verticaltext}>cedric.kuchen@protonmail.com</p>
+        <div className={style.verticallongline}></div>
       </div>
     </div>
   )

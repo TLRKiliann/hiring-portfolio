@@ -1,3 +1,4 @@
+/*
 import { FaPhone } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import style from '@/styles/contact.module.scss'
@@ -23,3 +24,4 @@ export default function ContactSection() {
     </div>
   )
 }
+*/

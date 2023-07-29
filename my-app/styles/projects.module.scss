@@ -135,7 +135,7 @@
       .a {
         text-decoration: none;
         font-size: 1.2rem;
-        color: $aqua;
+        color: skyblue;
         &:hover {
           cursor: pointer;
           color: $deepskyblue;
@@ -144,6 +144,33 @@
           color: $whitesmoke;
         }
       }
+    }
+  }
+  .parentvertical {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    height: 65%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    .verticaltext {
+      padding: 10px 0px;
+      height: 272px;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      font-family: $noto_serif;
+      font-size: 18px;
+      color: rgba(112,128,144, 1);
+    }
+    .verticallongline {
+      position: relative;
+      bottom: 0px;
+      left: 27px;
+      width: 10px;
+      height: calc(100% - 272px);
+      border-left: 1px solid rgba(112,128,144, 0.75);
     }
   }
 }
@@ -177,6 +204,33 @@
       flex-direction: column;
       .subdivproject {
         @include media-screen();
+      }
+    }
+    .parentvertical {
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+      height: 45%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      z-index: -1;
+      .verticaltext {
+        padding: 10px 0px;
+        height: 272px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-family: $noto_serif;
+        font-size: 18px;
+        color: rgba(112,128,144, 1);
+      }
+      .verticallongline {
+        position: relative;
+        bottom: 0px;
+        left: 27px;
+        width: 10px;
+        height: calc(100% - 272px);
+        border-left: 1px solid rgba(112,128,144, 0.75);
       }
     }
   }

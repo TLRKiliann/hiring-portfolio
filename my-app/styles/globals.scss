@@ -5,7 +5,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: linear-gradient(90deg, $bg_color2, $bg_color);
+  /*background: linear-gradient(90deg, $black_color, $bg_color);*/
+  background: #000;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }

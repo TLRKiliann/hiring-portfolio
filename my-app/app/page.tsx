@@ -1,17 +1,25 @@
+import Image  from 'next/image'
 import Layout from "@/components/layout"
+import Navbar from '@/components/navbar'
 import MainTitle from '@/components/mainTitle'
 import SkillsSection from '@/components/skillsSection'
 import ProjectsSection from '@/components/projectsSection'
-import ContactSection from '@/components/contactSection'
-import Navbar from '@/components/navbar'
+//import ContactSection from '@/components/contactSection'
 import Footer from '@/components/footer'
 import style from '@/styles/page.module.scss'
- 
+import path from '@/public/images/green_path.jpg'
+
 export default function Page() {
 
   return (
     <>
       <Navbar />
+
+      <div className={style.maindivimg}>
+        <div className={style.divbgimg}>
+          <Image src={path} width="500" height="auto" className={style.bg_img} />
+        </div>
+      </div>
 
       <Layout>
         <section className={style.sectionMainTitle}>
@@ -35,15 +43,15 @@ export default function Page() {
         </section>
       </Layout>
 
-      <hr className={style.hr} />
+      <Footer />
+    </>
+  )
+}
 
+/*
       <Layout>
         <section className={style.sectionContactSection}>
           <ContactSection />
         </section>
       </Layout>
-
-      <Footer />
-    </>
-  )
-}
+*/
