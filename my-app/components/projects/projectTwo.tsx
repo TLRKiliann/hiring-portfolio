@@ -55,7 +55,8 @@ export default function ProjectTwo() {
           <section className={style.section}>
 
             <p className={style.paragraph}>
-              Cette application web permet d'agender des rendez-vous avec :
+              Cette application web permet d'agender des rendez-vous et de les géolocaliser
+              avec :
             </p>
               <ul className={style.ul}>
                 <li className={style.li}>

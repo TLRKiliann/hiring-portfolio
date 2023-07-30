@@ -64,6 +64,7 @@ export default function ProjectThree() {
             <p className={style.paragraph}>
               Bien que le design présente bien et que la cohérence du site soit 
               respectée, je le trouve, dans sa vue d'ensemble, un peu old-school.
+              En même temps, c'est l'un de mes plus vieux sites.
             </p>
           </section>
           ) : null
