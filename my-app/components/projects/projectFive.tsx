@@ -2,17 +2,18 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image'
+import ButtonHandleCollapse from './buttonHandleCollapse'
 import { FaPython } from 'react-icons/fa'
 import { SiMysql } from 'react-icons/si'
 import TimeTrack from '@/public/images/time-track.png'
 import style from '@/styles/projects.module.scss'
 
-export default function ProjectFive() {
+export default function ProjectFive(){
 
-  const [ isOpened5, setIsOpened5 ] = useState<boolean>(false);
+  const [ isOpened, setIsOpened ] = useState<boolean>(false);
 
-  const handleCollapse5 = () => {
-    setIsOpened5(!isOpened5);
+  const handleCollapse = () => {
+    setIsOpened(!isOpened);
   };
 
   return (
@@ -42,36 +43,24 @@ export default function ProjectFive() {
         </div>
       </span>
 
-      <div className={style.divbtncoll}>
-        <button 
-          type="button" 
-          onClick={handleCollapse5} 
-          className={style.btncollapse}
-        >
-          Read more
-        </button>
-      </div>
+      <ButtonHandleCollapse handleCollapse={handleCollapse} />
 
-      <div isOpened5={isOpened5}>
-        {isOpened5 === true ? (            
+      <div isOpened={isOpened}>
+        {isOpened === true ? (            
           <section className={style.section}>
             <p className={style.paragraph}>
-              Ma première webapp avec Python3 (LAN). Je suis tellement fier de ce projet de 
-              par le nombre de fonctionnalités que j'ai intégré, le nombre de problématiques 
-              rencontrées et que j'ai pu résoudre, la créativité dont j'ai fait preuve et qui 
-              font que cette application est une webapp de soins améliorée.
+              Ma première webapp avec Python3 et MySQL (LAN). Cette application comprend : 
+              <ul className={style.ul}>
+                <li className={style.li}>Un tableau récapitulatif des données patients.</li>
+                <li className={style.li}>Enregistrement des paramètres vitaux avec rendu graphique.</li>
+                <li className={style.li}>Des alarmes programmables en tout temps.</li>
+                <li className={style.li}>Des alarmes de rappels pour l'arrêt des traitements et pour l'agenda.</li>
+                <li className={style.li}>Un menu pour le relevé des notes (infirmières, médecins, réseau de soin).</li>
+                <li className={style.li}>Une table des médicaments à sélectionner pour le dosage des médicaments, 
+                  avec en plus stix urinaire.</li>
+                <li className={style.li}>Un récapitulatif par patient imprimable.</li>
+              </ul>
             </p>
-            <p className={style.paragraph}>
-              Pour la construire, j'ai utlisé :
-            </p>
-            <ul className={style.ul}>
-              <li className={style.li}>tkinter pour la GUI.</li>
-              <li className={style.li}>matplotlib pour le rendu des paramètres vitaux.</li>
-              <li className={style.li}>multi-processing pour ouvrir 
-                des nouvelles fenêtre et rendre l'UX plus agréable.</li>
-              <li className={style.li}>multi-threading pour les alarmes programmables.</li>
-              <li className={style.li}>MySQL pour le tableau récapitulatif des données patients.</li>
-            </ul>
           </section>
           ) : null
         }

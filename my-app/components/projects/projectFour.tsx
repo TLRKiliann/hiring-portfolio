@@ -2,16 +2,17 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image'
+import ButtonHandleCollapse from './buttonHandleCollapse'
 import { FaWordpress } from 'react-icons/fa'
 import Axis from '@/public/images/institut-axis.png'
 import style from '@/styles/projects.module.scss'
 
 export default function ProjectFour() {
 
-  const [ isOpened4, setIsOpened4 ] = useState<boolean>(false);
+  const [ isOpened, setIsOpened ] = useState<boolean>(false);
 
-  const handleCollapse4 = () => {
-    setIsOpened4(!isOpened4);
+  const handleCollapse = () => {
+    setIsOpened(!isOpened);
   };
 
   return (
@@ -36,18 +37,10 @@ export default function ProjectFour() {
         </div>
       </span>
 
-      <div className={style.divbtncoll}>
-        <button 
-          type="button" 
-          onClick={handleCollapse4} 
-          className={style.btncollapse}
-        >
-          Read more
-        </button>
-      </div>
+      <ButtonHandleCollapse handleCollapse={handleCollapse} />
 
-      <div isOpened4={isOpened4}>
-        {isOpened4 === true ? (            
+      <div isOpened={isOpened}>
+        {isOpened === true ? (            
           <section className={style.section}>
             <p className={style.paragraph}>
               Le directeur de l'Institut-Axis m'a demandé de lui faire un site 
@@ -57,12 +50,13 @@ export default function ProjectFour() {
               infomaniak.
               <br />
               Le site de l'Institut-Axis comporte une barre de menu pour naviguer 
-              d'une page à l'autre en fonction des thématiques, un login pour 
+              d'une page à l'autre, en fonction des thématiques. Ainsi qu'un login pour 
               accéder au blog.
             </p>
             <p className={style.paragraph}>
               Cette expérience m'a appris plusieurs choses :
             </p>
+
             <ul className={style.ul}>
               <li className={style.li}>Conceptualiser un site en fonction des attentes d'un demandeur.</li>
               <li className={style.li}>Le choix de package chez un hébergeur (prix, taille, etc).</li>
@@ -74,7 +68,7 @@ export default function ProjectFour() {
             </ul>
             <p className={style.paragraph}>
               Le directeur et son associé sont ravis du résultat. Mon impression est 
-              que la cohérence de site et le design auraient pu être améliorée.
+              que la cohérence de site et le design auraient pu être améliorés.
             </p>
           </section>
           ) : null

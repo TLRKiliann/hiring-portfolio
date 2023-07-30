@@ -13,7 +13,8 @@
   .header {
     margin: auto;
     font-size: 2rem;
-    @include text-color($lightgrey, $slategrey);
+    @include text-color(rgba(141, 154, 166, 0.9), rgba(112,128,144, 0.75));
+    filter: contrast(200%);
   }
   .divskills {
     margin: 10px 0px;
@@ -29,7 +30,8 @@
         margin-bottom: 20px;
         font-family: $acme_font;
         font-size: 1.6rem;
-        @include text-color($lightgrey, $slategrey);        
+        @include text-color(rgba(141, 154, 166, 0.9), rgba(112,128,144, 0.75));
+        filter: contrast(200%);       
       }
       .spanskills {
         margin: auto;
