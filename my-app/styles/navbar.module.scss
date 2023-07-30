@@ -37,9 +37,10 @@
     font-family: $akayakanadaka_font;
     font-size: 1.6rem;
     font-weight: 600;
-    color: $slategrey;
+    color: #6b879f;
+    filter: contrast(100%);
     padding: 10px;
-    transition: transform ease 0.2s;
+    transition: transform ease-in-out 0.2s;
     &:hover {
       transform: scale(1.1);
     }

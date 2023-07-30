@@ -20,7 +20,8 @@
     margin-bottom: 20px;
     font-family: $noto_serif;
     font-size: 1.4rem;
-    @include text-color($lightgrey, $slategrey);
+    @include text-color(rgba(141, 154, 166, 0.9), rgba(112,128,144, 0.75));
+    filter: contrast(200%);
   }
   .divimg {
     display: flex;
@@ -66,20 +67,23 @@
       font-family: $noto_serif;
       font-size: 18px;
       font-weight: bold;
-      
       color: rgba(112,128,144, 1);
-
       background: linear-gradient(15deg,
         rgba(112,128,144, 0.5) 10%, 
-        rgba(0, 0, 0, 0.5) 100%);
-      border-radius: 7px;
+        rgba(0, 0, 0, 0.1) 100%);
       border: none;
-      outline: none;
+      border-radius: 7px;
       filter: contrast(200%);
       padding: 10px 20px;
       &:hover {
-        background: rgba(112,128,144, 0.5);
-        color: $bg_color2; 
+        background: rgba(112,128,144, 0.5); 
+        box-shadow: 0 0 10px $slategrey;
+        color: $whitesmoke; 
+      }
+      &:active {
+        background: rgba(112,128,144, 0.5); 
+        box-shadow: 0 0 0px $aqua;
+        color: $aqua; 
       }
     }
   }
@@ -131,7 +135,8 @@
   .header {
     margin: auto 0px;
     font-size: 2rem;
-    @include text-color($lightgrey, $slategrey);
+    @include text-color(rgba(141, 154, 166, 0.9), rgba(112,128,144, 0.75));
+    filter: contrast(200%);
   }
   .divproject {
     margin: 20px 0px;
@@ -243,7 +248,8 @@
         text-orientation: mixed;
         font-family: $noto_serif;
         font-size: 18px;
-        color: rgba(112,128,144, 1);
+        @include text-color(rgba(141, 154, 166, 0.9), rgba(112,128,144, 0.75));
+        filter: contrast(200%);
       }
       .verticallongline {
         position: relative;
