@@ -45,7 +45,7 @@ export default function ProjectThree() {
       
       <ButtonHandleCollapse handleCollapse={handleCollapse} />
 
-      <div isOpened={isOpened}>
+      <div>
         {isOpened === true ? (            
           <section className={style.section}>
             <p className={style.paragraph}>
