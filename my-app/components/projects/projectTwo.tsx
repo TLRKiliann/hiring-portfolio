@@ -50,7 +50,7 @@ export default function ProjectTwo() {
 
       <ButtonHandleCollapse handleCollapse={handleCollapse} />
 
-      <div isOpened={isOpened}>
+      <div>
         {isOpened === true ? (
           <section className={style.section}>
 
