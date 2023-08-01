@@ -129,13 +129,14 @@
     height: auto;
     filter: opacity(100%);
     border-radius: 50%;
+    background: linear-gradient(30deg, rgba(255,255,255, 0.7) 5%, transparent 100%);
     .photo {
       display: flex;
       width: 100%;
       height: auto;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 0 10px $slategrey;
+      box-shadow: 0 0 10px #6b879f;
     }
   }
 }
