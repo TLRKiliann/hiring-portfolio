@@ -9,6 +9,7 @@
 
 @mixin container-project() {
   width: 28%;
+  height: 60%;
   background: linear-gradient(30deg, rgba(141, 154, 166, 0.2), $bg_color2);
   border: none;
   outline: none;
@@ -78,10 +79,10 @@
       &:hover {
         background: rgba(112,128,144, 0.5); 
         box-shadow: 0 0 0px $slategrey;
-        color: #6b879f; 
+        color: #99adbd; 
       }
       &:active {
-        color: #99adbd;
+        color: $whitesmoke;
         background: rgba(112,128,144, 0.5);
         box-shadow: 0 0 10px #99adbd;
       }
@@ -90,13 +91,29 @@
   .section {
     margin: 20px 0px;
     height: 240px;
-    color: #6b879f;
+    
+    color: #99adbd;
+
     background: $bg_color;
     border: 1px solid rgba(112,128,144, 0.5);
-    border-radius: 3px;
+    border-radius: 3px;    
     overflow-y: scroll;
     scroll-behavior: smooth;
     padding: 0px 20px;
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #3C4D5B;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $bg_color2;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #617891;
+    }
     .paragraph {
       text-align: justify;
       text-justify: auto;
@@ -118,7 +135,7 @@
     .a {
       text-decoration: none;
       font-size: 1.2rem;
-      color: $aqua;
+      color: #6b879f;
       &:hover {
         cursor: pointer;
         color: $deepskyblue;
@@ -142,7 +159,7 @@
   .divproject {
     margin: 20px 0px;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: space-between;
     .subdivproject {
       @include container-project();
@@ -151,7 +168,7 @@
   .seconddivproject {
     margin: 40px 0px;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: space-evenly;
     .subdivproject {
       @include container-project();
@@ -162,7 +179,7 @@
       .a {
         text-decoration: none;
         font-size: 1.2rem;
-        color: $aqua;
+        color: #6b879f;
         &:hover {
           cursor: pointer;
           color: $deepskyblue;

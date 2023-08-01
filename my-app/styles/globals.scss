@@ -7,7 +7,22 @@ body {
   box-sizing: border-box;
   background: #000;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden;  
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #3C4D5B;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $bg_color2;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #617891;
+  }
 }
 
 footer {
