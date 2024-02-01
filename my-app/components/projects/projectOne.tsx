@@ -58,7 +58,9 @@ export default function ProjectOne() {
             Rendre clair les étapes du cheminement de l'achat du produit selectionné, 
             depuis le choix du produit jusqu'au paiment.
           </p>
-          <p className={style.paragraph}>La réalisation de ce projet m'a appris à :</p>
+          <p className={style.paragraph}>
+            La réalisation de ce projet m'a appris à :
+          </p>
           <ul className={style.ul}>
             <li className={style.li}>combiner des hooks tel que useReducer avec useContext.</li>
             <li className={style.li}>comprendre comment gérer les données avec MongoDB.</li>

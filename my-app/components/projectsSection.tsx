@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image'
 import ProjectOne from './projects/projectOne'
 import ProjectTwo from './projects/projectTwo'
 import ProjectThree from './projects/projectThree'

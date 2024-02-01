@@ -56,20 +56,20 @@ export default function ProjectTwo() {
             Cette application web permet d'agender des rendez-vous et de les géolocaliser
             avec :
           </p>
-            <ul className={style.ul}>
-              <li className={style.li}>
-                date et heure
-              </li>
-              <li className={style.li}>
-                localisation du lieu
-              </li>
-              <li className={style.li}>
-                nom, prénom, téléphone, e-mail
-              </li>
-              <li className={style.li}>
-                une note pour écrire en quoi consiste le rendez-vous
-              </li>
-            </ul>
+          <ul className={style.ul}>
+            <li className={style.li}>
+              date et heure
+            </li>
+            <li className={style.li}>
+              localisation du lieu
+            </li>
+            <li className={style.li}>
+              nom, prénom, téléphone, e-mail
+            </li>
+            <li className={style.li}>
+              une note pour écrire en quoi consiste le rendez-vous
+            </li>
+          </ul>
           <p className={style.paragraph}>
             La géolocalisation du rendez-vous se fait à l'aide du site: 
             "wego.here.com". 
