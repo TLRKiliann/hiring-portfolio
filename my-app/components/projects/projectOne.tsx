@@ -5,7 +5,7 @@ import Image from 'next/image'
 import ButtonHandleCollapse from './buttonHandleCollapse'
 import { SiTailwindcss, SiMongoose } from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
-import Ecommerce from '@/public/images/e-commerce.png'
+import myFace from '@/public/images/e-commerce.png'
 import style from '@/styles/projects.module.scss'
 
 
@@ -24,7 +24,7 @@ export default function ProjectOne() {
       </h2>
       <div className={style.divimg}>
         <Image 
-          src={Ecommerce}
+          src={myFace}
           alt="e-commerce img"
           layout="responsive"
           className={style.img}
