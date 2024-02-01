@@ -45,30 +45,27 @@ export default function ProjectThree() {
       
       <ButtonHandleCollapse handleCollapse={handleCollapse} />
 
-      <div>
-        {isOpened === true ? (            
-          <section className={style.section}>
-            <p className={style.paragraph}>
-              J'ai fait ce site de boulangerie, pour m'entraîner au code css, html, 
-              et à la manipulation des images.
-              <br />
+      <div>           
+        <section className={`${isOpened === true ? style.section : style.sectionhidden}`}>
+          <p className={style.paragraph}>
+            J'ai fait ce site de boulangerie, pour m'entraîner au code css, html, 
+            et à la manipulation des images.
+            <br />
               Ce site comprend :
-              <br/>
-            </p>
-              <ul className={style.ul}>
-                <li className={style.li}>la page principale</li>
-                <li className={style.li}>un formulaire pour commander des produits</li>
-                <li className={style.li}>une page pour la présentation des produits</li>
-                <li className={style.li}>une page de contact et une page pour les allergies</li>
-              </ul>
-            <p className={style.paragraph}>
-              Bien que le design présente bien et que la cohérence du site soit 
-              respectée, je le trouve, dans sa vue d'ensemble, un peu old-school.
-              En même temps, c'est l'un de mes plus vieux sites.
-            </p>
-          </section>
-          ) : null
-        }
+            <br/>
+          </p>
+            <ul className={style.ul}>
+              <li className={style.li}>la page principale</li>
+              <li className={style.li}>un formulaire pour commander des produits</li>
+              <li className={style.li}>une page pour la présentation des produits</li>
+              <li className={style.li}>une page de contact et une page pour les allergies</li>
+            </ul>
+          <p className={style.paragraph}>
+            Bien que le design présente bien et que la cohérence du site soit 
+            respectée, je le trouve, dans sa vue d'ensemble, un peu old-school.
+            En même temps, c'est l'un de mes plus vieux sites.
+          </p>
+        </section>
       </div>
 
       <span className={style.spanlink}>

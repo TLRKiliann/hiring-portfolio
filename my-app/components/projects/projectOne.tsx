@@ -51,25 +51,21 @@ export default function ProjectOne() {
       <ButtonHandleCollapse handleCollapse={handleCollapse} />
 
       <div>
-        {isOpened === true ? (
-          <section className={style.section}>
-            <p className={style.paragraph}>
-              Dans ce projet, j'ai rendu l'UX la plus professionnelle possible. 
-              
-              Rendre clair les étapes du cheminement de l'achat du produit selectionné, 
-              depuis le choix du produit jusqu'au paiment.
-              <br />
-              <p className={style.paragraph}>La réalisation de ce projet m'a appris à :</p>
-              <ul className={style.ul}>
-                <li className={style.li}>combiner des hooks tel que useReducer avec useContext.</li>
-                <li className={style.li}>comprendre comment gérer les données avec MongoDB.</li>
-                <li className={style.li}>sécuriser un site web avec TypeScript et NextAuth.</li>
-                <li className={style.li}>utiliser Tailwind avec le darkmode.</li>
-              </ul>
-            </p>
-          </section>
-          ) : null
-        }
+        <section className={`${isOpened === true ? style.section : style.sectionhidden}`}>
+          <p className={style.paragraph}>
+            Dans ce projet, j'ai rendu l'UX la plus professionnelle possible. 
+            
+            Rendre clair les étapes du cheminement de l'achat du produit selectionné, 
+            depuis le choix du produit jusqu'au paiment.
+          </p>
+          <p className={style.paragraph}>La réalisation de ce projet m'a appris à :</p>
+          <ul className={style.ul}>
+            <li className={style.li}>combiner des hooks tel que useReducer avec useContext.</li>
+            <li className={style.li}>comprendre comment gérer les données avec MongoDB.</li>
+            <li className={style.li}>sécuriser un site web avec TypeScript et NextAuth.</li>
+            <li className={style.li}>utiliser Tailwind avec le darkmode.</li>
+          </ul>
+        </section>
       </div>
 
       <span className={style.spanlink}>

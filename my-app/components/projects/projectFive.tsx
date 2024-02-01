@@ -45,25 +45,22 @@ export default function ProjectFive(){
 
       <ButtonHandleCollapse handleCollapse={handleCollapse} />
 
-      <div>
-        {isOpened === true ? (            
-          <section className={style.section}>
-            <p className={style.paragraph}>
-              Ma première webapp avec Python3 et MySQL (LAN). Cette application comprend : 
-              <ul className={style.ul}>
-                <li className={style.li}>Un tableau récapitulatif des données patients.</li>
-                <li className={style.li}>Enregistrement des paramètres vitaux avec rendu graphique.</li>
-                <li className={style.li}>Des alarmes programmables en tout temps.</li>
-                <li className={style.li}>Des alarmes de rappels pour l'arrêt des traitements et pour l'agenda.</li>
-                <li className={style.li}>Un menu pour le relevé des notes (infirmières, médecins, réseau de soin).</li>
-                <li className={style.li}>Une table des médicaments à sélectionner pour le dosage des médicaments, 
-                  avec en plus stix urinaire.</li>
-                <li className={style.li}>Un récapitulatif par patient imprimable.</li>
-              </ul>
-            </p>
-          </section>
-          ) : null
-        }
+      <div>          
+        <section className={`${isOpened === true ? style.section : style.sectionhidden}`}>
+          <p className={style.paragraph}>
+            Ma première webapp avec Python3 et MySQL (LAN). Cette application comprend : 
+            <ul className={style.ul}>
+              <li className={style.li}>Un tableau récapitulatif des données patients.</li>
+              <li className={style.li}>Enregistrement des paramètres vitaux avec rendu graphique.</li>
+              <li className={style.li}>Des alarmes programmables en tout temps.</li>
+              <li className={style.li}>Des alarmes de rappels pour l'arrêt des traitements et pour l'agenda.</li>
+              <li className={style.li}>Un menu pour le relevé des notes (infirmières, médecins, réseau de soin).</li>
+              <li className={style.li}>Une table des médicaments à sélectionner pour le dosage des médicaments, 
+                avec en plus stix urinaire.</li>
+              <li className={style.li}>Un récapitulatif par patient imprimable.</li>
+            </ul>
+          </p>
+        </section>
       </div>
 
       <span className={style.spanlink}>

@@ -51,48 +51,44 @@ export default function ProjectTwo() {
       <ButtonHandleCollapse handleCollapse={handleCollapse} />
 
       <div>
-        {isOpened === true ? (
-          <section className={style.section}>
-
-            <p className={style.paragraph}>
-              Cette application web permet d'agender des rendez-vous et de les géolocaliser
-              avec :
-            </p>
-              <ul className={style.ul}>
-                <li className={style.li}>
-                  date et heure
-                </li>
-                <li className={style.li}>
-                  localisation du lieu
-                </li>
-                <li className={style.li}>
-                  nom, prénom, téléphone, e-mail
-                </li>
-                <li className={style.li}>
-                  une note pour écrire en quoi consiste le rendez-vous
-                </li>
-              </ul>
-            <p className={style.paragraph}>
-              La géolocalisation du rendez-vous se fait à l'aide du site: 
-              "wego.here.com". 
-              <br />
-              Dans cette application, j'ai appris à manipuler les données 
-              à l'aide des requêtes HTTP (CRUD). J'ai utilisé AXIOS sur la 
-              partie frontend, ainsi qu'avec Node.js avec Express sur la partie 
-              backend, avec MariaDB.
-              Une base de données MySQL utilisée est sur mon server Raspberry (LAN).
-              <br />
-              Une fois les données entrées, l'utilisateur peut les modifier 
-              et les enregistrer. Lorsque le rendez-vous est terminé l'utilisateur
-              peut l'enrigistrer (sur une autre table) pour qu'il soit transférer sur 
-              une autre page, afin de ne pas perdre l'historique.
-              <br />
-              Les points d'amélioration sont la refactorisation du code 
-              et le style (trop sombre, trop bleu).
-            </p>
-          </section>
-          ) : null
-        }
+        <section className={`${isOpened === true ? style.section : style.sectionhidden}`}>
+          <p className={style.paragraph}>
+            Cette application web permet d'agender des rendez-vous et de les géolocaliser
+            avec :
+          </p>
+            <ul className={style.ul}>
+              <li className={style.li}>
+                date et heure
+              </li>
+              <li className={style.li}>
+                localisation du lieu
+              </li>
+              <li className={style.li}>
+                nom, prénom, téléphone, e-mail
+              </li>
+              <li className={style.li}>
+                une note pour écrire en quoi consiste le rendez-vous
+              </li>
+            </ul>
+          <p className={style.paragraph}>
+            La géolocalisation du rendez-vous se fait à l'aide du site: 
+            "wego.here.com". 
+            <br />
+            Dans cette application, j'ai appris à manipuler les données 
+            à l'aide des requêtes HTTP (CRUD). J'ai utilisé AXIOS sur la 
+            partie frontend, ainsi qu'avec Node.js avec Express sur la partie 
+            backend, avec MariaDB.
+            Une base de données MySQL utilisée est sur mon server Raspberry (LAN).
+            <br />
+            Une fois les données entrées, l'utilisateur peut les modifier 
+            et les enregistrer. Lorsque le rendez-vous est terminé l'utilisateur
+            peut l'enrigistrer (sur une autre table) pour qu'il soit transférer sur 
+            une autre page, afin de ne pas perdre l'historique.
+            <br />
+            Les points d'amélioration sont la refactorisation du code 
+            et le style (trop sombre, trop bleu).
+          </p>
+        </section>
       </div>
 
       <span className={style.spanlink}>
