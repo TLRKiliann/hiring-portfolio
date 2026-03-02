@@ -26,7 +26,8 @@ export default function ProjectOne() {
         <Image 
           src={myFace}
           alt="e-commerce img"
-          layout="responsive"
+          width={380}
+          height={200}
           className={style.img}
         />
       </div>
