@@ -17,19 +17,11 @@
     "@types/react-collapse": "^5.0.4",
     "@types/react-dom": "18.2.6",
     "eslint-config-next": "14.1.0",
-<<<<<<< HEAD
-    "framer-motion": "^10.12.18",
-    "next": "14.1.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.10.1",
-=======
     "framer-motion": "^10.18.0",
     "next": "^16.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.12.0",
->>>>>>> 90970c0 (updated)
     "sharp": "^0.32.6",
     "typescript": "5.1.6"
   },
